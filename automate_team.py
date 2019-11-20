@@ -1,15 +1,3 @@
-import requests
-import os
-from bs4 import BeautifulSoup
-import itertools
-
-from selenium import webdriver
-import time
-import random
-import pandas as pd
-import datetime
-import numpy as np
-
 import uuid
 
 import requests
@@ -25,14 +13,18 @@ import random
 import pandas as pd
 import datetime
 
-driver_path = r"C:\Users\scody\Desktop\Juypter\JJE\Drivers\chromedriver.exe"
-driver_path = '/Users/codyscott/PycharmProjects/Jupyter/chromedriver'
+driver_path = r"F:\A_Data Backup\Desktop\Projects\PycharmProjects\JJE_Automation\chromedriver.exe"
+# driver_path = '/Users/codyscott/PycharmProjects/Jupyter/chromedriver'
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 today_value = datetime.datetime.today().strftime("%Y%m%d")
 
 # BAD but could just change these with a global... Mr.Lazy
-__results_table = f'Results_{today_value}.hdf5'
-__uuid_table = f'UUID_{today_value}.hdf5'
+__results_table = os.path.join(BASE_DIR, f'RESULTS_{today_value}.hdf5')
+__uuid_table = os.path.join(BASE_DIR, f'UUID_{today_value}.hdf5')
+__teams_table = os.path.join(BASE_DIR, f'TEAMS_{today_value}.hdf5')
+__rank_table = os.path.join(BASE_DIR, f'RANKS_{today_value}.hdf5')
 
 # protected players
 rookies = [
@@ -60,19 +52,18 @@ def _update_progress(ci, mx_num=None, **kwargs):
     if mx_num is None:
         mx_num=0
     # clear_output(wait = True)
-    
-    for i in kwargs.get("start_print", []):
-            print(i)
+
+    # for i in kwargs.get("start_print", []):
+    #         print(i)
             
     if mx_num > 0:
         bar_length = 20            
-        print(f"{ci:,} of {mx_num:,}")
+        # print(f"{ci:,} of {mx_num:,}")
         pg = (ci/mx_num)
-        block = int(round(bar_length * pg))            
-        # text = "Progress: [{0}] {1:.1f}%".format( "#" * block + "-" * (bar_length - block), pg * 100)        
-        print(text)
-        
-                    
+        block = int(round(bar_length * pg))
+        # print("\r")
+        text = "\rProgress: [{0}] {1:.1f}%".format( "#" * block + "-" * (bar_length - block), pg * 100)
+        print(text, flush=True, end="")
     else:
         print(f"{ci:,}")
         
@@ -349,7 +340,7 @@ def _subcheck(i_item):
 
 def generate_unique_teams(i_list, player_list, _goalies, _rookies, current_roster_class=None, _combo_count=0, **kwargs):
     # i_list is generator object from all positional counts
-    print("Generating Unique Teams")
+    print("Validating Teams")
     _fl = [i[0] for i in player_list]
     team_classes = []
     for i, i_item in enumerate(i_list):                
@@ -370,8 +361,8 @@ def generate_unique_teams(i_list, player_list, _goalies, _rookies, current_roste
         tl.FullList = _fl
         tl.CurrentRosterClass = current_roster_class        
         team_classes.append(tl)
-
     _update_progress(_combo_count, _combo_count, **kwargs)
+    print("")
     return team_classes
 
 
@@ -509,6 +500,7 @@ def _print_positions(t_class, players):
 # actual work area
 def player_list():
     # get my players
+    print("loading player info")
     all_players, current_roster = get_current_roster()
     current_roster_class = team_from_list(current_roster)
 
@@ -533,18 +525,21 @@ def player_list():
     tmp_ls = []
     for p in _free_agents:
         tmp_ls.append(_check_players + [p])
-
+    print('')
     return {
         'all_players': all_players, 'current_roster_class': current_roster_class, 
         'check_players': _check_players, 'free_agents': _free_agents,  
-        'full_player_list': full_player_list, 'team_list': tmp_ls
+        'full_player_list': full_player_list, 'team_list': tmp_ls,
+        'original_roster_class': current_roster_class
     }
 
 
 def performance_data(_check_players, _free_agents):
     # selenium BS4 loader
+    print("Loading performance data")
     ply = get_player_dataframe(_check_players + _free_agents)
     res_df = reduce_frame(ply)
+    print('')
     return res_df
 
 
@@ -561,39 +556,46 @@ def team_class_to_DF(_team_list, **kwargs):
         cd["UUID"] = t.UUID
         t_dict.append(cd)
     _update_progress(len(_team_list), len(_team_list), **kwargs)
+    print("")
     return pd.DataFrame.from_dict(t_dict)
 
 
 def calculate_team_combinations(tmp_ls, current_roster_class):
+    if os.path.exists(__teams_table):
+        return __teams_table
+
     for i, tt in enumerate(tmp_ls):
         pt = [f"Team {i+1} of {len(tmp_ls)}"]
-        
+        print(pt[0])
+
         _pdict = build_positional_list(tt)
         _cdict = build_positional_combinations(_pdict)
         _ac_list = get_all_combinations(_cdict)
-
+        print(f"{_get_icount(_cdict):,} total combinations")
         out_list = generate_unique_teams(
             _ac_list, tt+bench_goalies, [g[0] for g in goalies], [r[0] for r in rookies], 
-            current_roster_class, _get_icount(_cdict), start_print=pt+["Creating Unique Teams"]
+            current_roster_class, _get_icount(_cdict)
         )
-        print(f"{_get_icount(_cdict):,} total combinations")
         print(f"{len(out_list):,} final teams")
         
         df = team_class_to_DF(out_list, start_print=pt+["Convering Classes to Data Frame"])
-        df.to_hdf("teams.hdf5", key='team_list', format='table', append=True)
-    
-    uuid_df = pd.read_hdf(f'teams_{today_value}.hdf5')
-    return 'teams.hdf5'
+        df.to_hdf(__teams_table, key='team_list', format='table', append=True)
+        print('')
+        break
+    return __teams_table
 
 
-def generate_results():
-    uuid_df = pd.read_hdf('teams.hdf5')
+# noinspection PyTypeChecker
+def generate_results(res_df):
+    print("Generating Results")
+    print("loading teams table")
+    uuid_df = pd.read_hdf(__teams_table)
     uuid_df['Active'] = uuid_df["LW"]+','+uuid_df["C"]+','+uuid_df["RW"]+','+uuid_df["D"]
-    uuid_df = combo_df[["UUID", "Active"]]
-    uuid_df.to_hdf("UUID.hdf5", key='team_list', format='table', append=True)
-
+    uuid_df = uuid_df[["UUID", "Active"]]
+    uuid_df.to_hdf(__uuid_table, key='team_list', format='table', append=True)
+    del(uuid_df)
     chunk_size=10000
-    for chunk in pd.read_hdf('UUID.hdf5', 'team_list', chunksize=chunk_size):   
+    for chunk in pd.read_hdf(__uuid_table, 'team_list', chunksize=chunk_size):
         chunk['Active'] = chunk["Active"].str.split(',')
         # chunk['Active'] = chunk['Active'].apply(lambda x: int(x))
         chunk = chunk.explode('Active').rename(columns={'Active': 'player_id'})
@@ -604,61 +606,118 @@ def generate_results():
     return __results_table
 
 
+def _is_team_identical(tc):
+    n0 = [p.UUID for p in tc if p.number_of_adds == 0]
+    if len(n0) > 1:
+        return True
+    else:
+        return False
+
+
 def rank_results(current_roster_class, full_player_list):
+    print("Ranking Results")
+    print("Loading team table")
+    uuid_df = pd.read_hdf(__teams_table)
+
+    print("loading results table")
     tmpdf = pd.read_hdf(__results_table)
     ranks = tmpdf.rank(method='min', ascending=False).mean(axis=1).to_frame("mean rank")
     ranks = ranks.join(ranks.rank(method='min')["mean rank"].to_frame('rank'))
     ranks = ranks.sort_values('rank')
+
+    r1 = ranks.loc[ranks['rank'] == 1]
+    ranks = r1.loc[~r1.index.duplicated(keep='first')]
     
     tc = []
     tl = ranks.loc[ranks['rank']==1].shape[0]
-
+    print("Converting Highest rank teams")
     for ix, i in enumerate(ranks.loc[ranks['rank']==1].itertuples()):    
         _update_progress(ix+1, tl)
         tc.append(
             series_to_team_class(uuid_df.loc[uuid_df['UUID']==i[0]].iloc[0], current_roster_class)
         )
+    print("")
 
-    tc_bottom = []
-    tl = ranks.loc[ranks['rank']==ranks['rank'].max()].shape[0]
-    for ix, i in enumerate(ranks.loc[ranks['rank']==ranks['rank'].max()].itertuples()):    
-        _update_progress(ix+1, tl)
-        tc_bottom.append(
-            series_to_team_class(uuid_df.loc[uuid_df['UUID']==i[0]].iloc[0], current_roster_class)
-        )
+    if _is_team_identical(tc):
+        # means one of the teams equals the existing team, therefore that is the team to use
+        return tc[0], True
+    else:
+        return tc[0], False
 
-    n0 = [p.UUID for p in tc if p.number_of_adds == 0]
-    print("Scenarios mathing base team", "\n".join(n0))
+
+def _bench_players(tc):
+    bn = []
+    for p in tc:
+        bn += [z for z in p.Bench + p.IR if z not in [x[0] for x in protected_list]]
+    return bn
+
+
+def print_results(tc, full_player_list, original_team_class):
+    tc.CurrentRosterClass = original_team_class
+    tc = [tc]
 
     print("Players detected to add")
     for p in list(set(([t.calculate_adds_drops()['add'][0] for t in tc]))):
         [print(r) for r in full_player_list if p == r[0]]
+    print('')
 
-    print("Players on bench in in max conditions")
-    bn = []
-    for p in tc:
-        bn += [z for z in p.Bench + p.IR if z not in [x[0] for x in protected_list]]
-    #     bn += p.Bench + p.IR
+    print("Players on bench in in optimal teams")
+    bn = _bench_players([tc])
+
     bn = {c:bn.count(c) for c in set(bn)}
     bn = {y:bn[y] for y in bn if bn[y] == max([bn[x] for x in bn])}
     for p in bn:
         [print(r) for r in full_player_list if p == r[0]]
+    print('')
 
     print("Optimal Roster", "\n")
     _print_positions(tc[0], full_player_list)
+    return tc[0]
 
 
-def main(plist=None):
+def main(plist=None, **kwargs):
     if plist is None:
         plist = player_list()
 
-    performance_data(plist['_check_players'], plist['_free_agents'])
+    res_df = performance_data(plist['check_players'], plist['free_agents'])
     calculate_team_combinations(plist['team_list'], plist['current_roster_class'])
-    generate_results()
-    rank_results(plist['current_roster_class'], plist['full_player_list'])
+    generate_results(res_df)
+    otc, ident = rank_results(plist['current_roster_class'], plist['full_player_list'])
+    if ident is True:
+        print_results(otc, plist['full_player_list'], plist['original_roster_class'])
+    else:
+        main(generate_new_loop_data(plist, otc))
     # save_results()
 
 
+def save_results(tc):
+    uuid_df = pd.read_hdf(__teams_table)
+    tmpdf = pd.read_hdf(__results_table)
+
+
+def generate_new_loop_data(plist, optimal_team_class):
+    if optimal_team_class.Active == plist['current_roster_class'].Active:
+        return None
+
+    bp = _bench_players([optimal_team_class])
+    drop_player = bp[0]
+    ap = [p for p in plist['all_players'] if p[0] != drop_player]
+    crc = optimal_team_class
+    ckp = [p for p in plist['check_players'] if p[0] != drop_player]
+    fa = [p for p in plist['free_agents'] if p[0] != drop_player]
+    fpl = [p for p in plist['full_player_list'] if p[0] != drop_player]
+    team_list = [p for p in plist['team_list'] if p[0] != drop_player]
+
+    return {
+        'all_players': ap, 'current_roster_class': crc,
+        'check_players': ckp, 'free_agents': fa,
+        'full_player_list': fpl, 'team_list': team_list,
+        'original_roster_class': plist['original_roster_class']
+    }
+
+
+if __name__ == '__main__':
+    main()
 """
 if i want to loop optimize i need to supply this dictionary
     return {
