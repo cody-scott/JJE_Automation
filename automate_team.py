@@ -652,16 +652,12 @@ def _bench_players(tc):
     return bn
 
 
-def _add_players(tc):
-    for p in list(set(([t.calculate_adds_drops()['add'][0] for t in tc]))):
-        [print(r) for r in full_player_list if p == r[0]]
-
 def print_results(tc, full_player_list, original_team_class):
     tc.CurrentRosterClass = original_team_class
-    tc = [tc]
+    tc = tc
 
     print("Players detected to add")
-    for p in list(set(([t.calculate_adds_drops()['add'][0] for t in tc]))):
+    for p in list(set(([t.calculate_adds_drops()['add'][0] for t in [tc]]))):
         [print(r) for r in full_player_list if p == r[0]]
     print('')
 
@@ -700,6 +696,7 @@ def save_results(tc):
 
 
 def generate_new_loop_data(plist, optimal_team_class):
+    print("Generating new loop data")
     if optimal_team_class.Active == plist['current_roster_class'].Active:
         return None
 
@@ -711,13 +708,13 @@ def generate_new_loop_data(plist, optimal_team_class):
     crc = optimal_team_class
     ckp = [p for p in plist['check_players'] if p[0] != drop_player]
     fa = [p for p in plist['free_agents'] if p[0] not in [drop_player] + add_fa]
-    fpl = [p for p in plist['full_player_list'] if p[0] not in [drop_player] + add_fa]
+    fpl = [p for p in plist['full_player_list'] if p[0] not in [drop_player]]
     team_list = [p for p in plist['team_list'] if p[0] != drop_player]
 
     tmp_ls = []
     for p in fa:
         tmp_ls.append(ckp + [p])
-
+    print('')
     return {
         'all_players': ap, 'current_roster_class': crc,
         'check_players': ckp, 'free_agents': fa,
