@@ -14,7 +14,7 @@ import pandas as pd
 import datetime
 
 driver_path = r"F:\A_Data Backup\Desktop\Projects\PycharmProjects\JJE_Automation\chromedriver.exe"
-# driver_path = '/Users/codyscott/PycharmProjects/Jupyter/chromedriver'
+driver_path = '/Users/codyscott/PycharmProjects/Jupyter/chromedriver'
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -535,7 +535,7 @@ def player_list():
 
 
 def performance_data(_check_players, _free_agents):
-    # selenium BS4 loader
+    # selenium BS4 loader should add check on which players did not load. try it again if failed?
     print("Loading performance data")
     ply = get_player_dataframe(_check_players + _free_agents)
     res_df = reduce_frame(ply)
@@ -561,8 +561,8 @@ def team_class_to_DF(_team_list, **kwargs):
 
 
 def calculate_team_combinations(tmp_ls, current_roster_class):
-    if os.path.exists(__teams_table):
-        return __teams_table
+    # if os.path.exists(__teams_table):
+    #     return __teams_table
 
     for i, tt in enumerate(tmp_ls):
         pt = [f"Team {i+1} of {len(tmp_ls)}"]
@@ -581,7 +581,7 @@ def calculate_team_combinations(tmp_ls, current_roster_class):
         df = team_class_to_DF(out_list, start_print=pt+["Convering Classes to Data Frame"])
         df.to_hdf(__teams_table, key='team_list', format='table', append=True)
         print('')
-        break
+        # break
     return __teams_table
 
 
@@ -671,11 +671,14 @@ def print_results(tc, full_player_list, original_team_class):
     print('')
 
     print("Optimal Roster", "\n")
-    _print_positions(tc[0], full_player_list)
-    return tc[0]
+    _print_positions(tc, full_player_list)
+    return tc
 
 
 def main(plist=None, **kwargs):
+    iteration = kwargs.get('iteration', 1)
+    print(f"Iteration {iteration}")
+
     if plist is None:
         plist = player_list()
 
@@ -686,7 +689,7 @@ def main(plist=None, **kwargs):
     if ident is True:
         print_results(otc, plist['full_player_list'], plist['original_roster_class'])
     else:
-        main(generate_new_loop_data(plist, otc))
+        main(generate_new_loop_data(plist, otc), iteration=iteration+1)
     # save_results()
 
 
