@@ -65,7 +65,7 @@ def build_team(players):
     solver.solve_model()
     solver.print_solved(show_unplaced=False)
     save_to_deta(
-        solver.results_to_json(Path('results'))
+        solver.results_to_json()
     )
     
 

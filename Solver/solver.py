@@ -190,7 +190,7 @@ class FantasyModel:
             dc['placed_position'] = p.get_placed_position(self.solved_model)
             data.append(dc)
         
-        return json.dump(data, indent=4)
+        return json.dumps(data, indent=4)
 
     def print_solved(self, show_unplaced=True, show_stats=True):
         skip_positions = [] if show_unplaced else ["Unplaced"]
