@@ -29,16 +29,7 @@ class FantasyModel:
                 # for each position, loop the allowed number per-position
                 for i in range(positions[position]):
                     _lbl = f'{player.id} - {player.name} - {position} - {i}'
-                    if 'IR' in player.positions: 
-                        if position == "IR":
-                            x=1
-
-                    if position == 'IR' and player.ir:
-                        # either 0 or 1 depending on if placed
-                        pos_var = model.NewBoolVar(_lbl)
-                        player.allow_positions[position].append(pos_var)
-
-                    elif position == 'Bench':
+                    if position == 'Bench':
                         pos_var = model.NewBoolVar(_lbl)
                         player.allow_positions[position].append(pos_var)
 
@@ -47,7 +38,6 @@ class FantasyModel:
                         player.allow_positions[position].append(pos_var)
 
                     elif (position in player.positions):
-                    # elif (position in player.positions) and (not player.ir):
                         pos_var = model.NewBoolVar(_lbl)
                         player.allow_positions[position].append(pos_var)
                         

@@ -12,7 +12,7 @@ token_url = 'https://api.login.yahoo.com/oauth2/get_token'
 SITE=os.environ['SITE']
 local = os.environ.get('LOCAL', "")
 
-LEAGUE_ID = 'nhl.l.67957'
+LEAGUE_ID = os.environ.get('LEAGUE_ID')
 
 deta = Deta(os.environ['DETA_PROJECT'])
 drive = deta.Drive("yahoo")

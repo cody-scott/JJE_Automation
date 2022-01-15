@@ -4,3 +4,4 @@ requests
 ortools
 scikit-learn
 python-dotenv
+deta

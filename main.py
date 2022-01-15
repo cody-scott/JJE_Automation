@@ -3,6 +3,7 @@ import json
 import os
 from pathlib import Path
 import datetime
+from deta import Deta
 
 from PerformanceData import process
 from Solver.solver import FantasyModel
@@ -56,7 +57,7 @@ def save_to_deta(result):
 
     deta = Deta(os.environ['DETA_PROJECT'])
     drive = deta.Drive("yahoo_results")
-    drive.put(f'results_{dt}.json', results)
+    drive.put(f'results_{dt}.json', result)
 
 def build_team(players):
     solver = FantasyModel()

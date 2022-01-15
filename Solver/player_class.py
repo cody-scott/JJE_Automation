@@ -20,7 +20,6 @@ class Player:
     hits: int
     
     protected: bool = False
-    ir: bool = False
     util: bool = False
     current_position: str = "NA"
     
