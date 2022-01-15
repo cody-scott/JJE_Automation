@@ -1,0 +1,5 @@
+flask
+requests_oauthlib
+beautifulsoup4
+deta
+python-dotenv
