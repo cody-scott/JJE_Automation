@@ -21,7 +21,7 @@ class Player:
     
     protected: bool = False
     util: bool = False
-    current_position: str = "NA"
+    current_position: str = "Waivers"
     
     model_positions: Dict = field(default_factory=dict) # list of all the position permutations for the player
     allow_positions: Dict = field(default_factory=dict) # dictionary of each position and the model variables for it
@@ -39,7 +39,7 @@ class Player:
                     for _ in self.allow_positions[p]
                 ]):
                 return p
-        return "Unplaced"
+        return "Waivers"
 
     def unravel_model_positions(self, data, exclude_positions: List[str] = None):
         exclude_positions = exclude_positions or []

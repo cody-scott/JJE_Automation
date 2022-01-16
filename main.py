@@ -59,6 +59,9 @@ def save_to_deta(result):
     drive = deta.Drive("yahoo_results")
     drive.put(f'results_{dt}.json', result)
 
+    with open(Path('results')/f"results_{dt}.json", "w") as f:
+        json.dump(result, f, indent=4)
+
 def build_team(players):
     solver = FantasyModel()
     players = player_class.join_protected(players, 'protected_players.json')

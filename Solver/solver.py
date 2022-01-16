@@ -79,7 +79,7 @@ class FantasyModel:
         res = [
             [pp, _.id] 
             for _ in players 
-            if (pp := _.get_placed_position(solved_model)) not in ['Unplaced']
+            if (pp := _.get_placed_position(solved_model)) not in ['Waivers']
         ]
 
         positions = {}
@@ -93,10 +93,10 @@ class FantasyModel:
     def build_model(self, players: List[Player]):
         model = cp_model.CpModel()
 
-        positions = {'LW': 3, 'RW': 3, 'C': 3, 'D': 5, 'Util': 1, 'IR': 1, 'Bench': 3}
+        positions = {'LW': 3, 'RW': 3, 'C': 3, 'D': 5, 'Util': 1, 'IR': 2, 'Bench': 3}
     
         positions_dict = self.build_player_positions(model, players, positions)
-        # max 1 position for a player
+        
 
         for player in players:
             if player.protected:
@@ -183,7 +183,7 @@ class FantasyModel:
         return json.dumps(data, indent=4)
 
     def print_solved(self, show_unplaced=True, show_stats=True):
-        skip_positions = [] if show_unplaced else ["Unplaced"]
+        skip_positions = [] if show_unplaced else ["Waivers"]
         if self.solved_status != cp_model.OPTIMAL:
             return
         _solved_model = self.solved_model
@@ -204,14 +204,14 @@ class FantasyModel:
                     [
                         getattr(_, targets[target]) 
                         for _ in self.players
-                        if _.get_placed_position(_solved_model) not in ['IR', 'Bench', 'Unplaced']
+                        if _.get_placed_position(_solved_model) not in ['IR', 'Bench', 'Waivers']
                     ]               
                 )
                 current_sum = sum(
                     [
                         getattr(_, targets[target]) 
                         for _ in self.players
-                        if _.current_position not in ['IR', 'Bench', 'NA']
+                        if _.current_position not in ['IR', 'Bench', 'Waivers']
                     ] 
                 )
                 print(
