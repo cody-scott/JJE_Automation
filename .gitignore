@@ -111,3 +111,6 @@ venv.bak/
 **vscode
 *.DS*
 *.deta
+
+**__pycache__**
+**logs**

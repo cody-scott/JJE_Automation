@@ -1,0 +1,73 @@
+version: "3"
+services:
+  yahoo-service:
+    build: .
+    image: yahoo
+    volumes:
+      - .:/app
+    ports:
+      - "8000"
+      - "80"
+    labels:
+      # - "traefik.http.routers.yahoo.rule=Host(`www.my-site.test`)"
+      # - "traefik.http.routers.yahoo.tls=true"
+      - "traefik.http.middlewares.yahoo-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.yahoo-https-redirect.redirectscheme.permanent=true"
+
+      - "traefik.http.routers.yahoo-proxy-http.rule=Host(`www.my-site.test`)"
+      - "traefik.http.routers.yahoo-proxy-http.entrypoints=http"
+      
+      - "traefik.http.routers.yahoo-proxy-https.rule=Host(`www.my-site.test`)"
+      - "traefik.http.routers.yahoo-proxy-https.entrypoints=https"
+      - "traefik.http.routers.yahoo-proxy-https.tls=true"
+      # - traefik.http.routers.yahoo-frontend-http.rule=PathPrefix(`/`)
+      # - traefik.http.services.yahoo-frontend.loadbalancer.server.port=80
+    networks:
+      - my-network
+  
+  traefik:
+    image: "traefik:v2.5"
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      # - "--providers.docker.exposedbydefault=false"
+      # - "--entrypoints.web.address=:80"
+      # - "--entrypoints.web-secure.address=:443"
+      # - "--entryPoints.web-secure.forwardedHeaders.insecure"
+
+      - "--entrypoints.http.address=:80"
+      - "--entrypoints.https.address=:443"
+      - "--entrypoints.web.http.redirections.entryPoint.to=https"
+      - "--entryPoints.https.forwardedHeaders.insecure"
+
+      - "--log.level=DEBUG"
+      - "--accesslog=true"
+      - "--accessLog.filePath=/var/log/traefik_access.log"
+      - "--log.filePath=/var/log/traefik.log"
+      - "--log.format=json"
+    # labels:
+      # - "traefik.http.routers.traefik.rule=Host(`monitor.my-site.test`)"
+      # - "traefik.http.routers.traefik.tls=true"
+      
+      # - "traefik.http.middlewares.yahoo-https-redirect.redirectscheme.scheme=https"
+      # - "traefik.http.middlewares.yahoo-https-redirect.redirectscheme.permanent=true"
+
+      # - "traefik.http.routers.yahoo-proxy-http.rule=Host(`www.my-site.test`)"
+      # - "traefik.http.routers.yahoo-proxy-http.entrypoints=http"
+      
+      # - "traefik.http.routers.yahoo-proxy-https.rule=Host(`www.my-site.test`)"
+      # - "traefik.http.routers.yahoo-proxy-https.entrypoints=https"
+      # - "traefik.http.routers.yahoo-proxy-https.tls=true"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "./logs:/var/log/"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

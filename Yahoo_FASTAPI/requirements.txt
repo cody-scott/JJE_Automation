@@ -1,0 +1,7 @@
+fastapi
+httpx
+itsdangerous
+authlib
+uvicorn[standard]
+deta
+xmltodict
