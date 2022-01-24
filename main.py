@@ -25,6 +25,43 @@ def get_ids():
     players = remove_duplicate_ids(players)
     return [_ for _ in players if 'G' not in _['positions']]
 
+def get_ids_2():
+    my_team = _get_my_team()
+    fas = _get_fa()
+    return remove_duplicate_ids(my_team + fas)
+
+
+def _get_fa():
+    r = []
+    for _ in range(0, 25*2, 25):
+        data = requests.get(f"https://panrau.deta.dev/players?start_num={_}").json()
+        for p in data:
+            if "G" in p['eligible_positions']['position']: continue
+            f = dict(
+                id=p['player_id'],
+                name=p['name']['full'],
+                positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']],
+                team=p['editorial_team_full_name']
+            )
+            r.append(f)
+    return r
+
+
+def _get_my_team():
+    data = requests.get(f"{deta_url}/roster?team_id=8").json()
+    r = []
+    for p in data['players']['player']:
+        if "G" in p['eligible_positions']['position']: continue
+        f = dict(
+            id=p['player_id'],
+            name=p['name']['full'],
+            positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']],
+            current_position=p['selected_position']['position'],
+            team=p['editorial_team_full_name']
+        )
+        r.append(f)
+    return r
+
 def remove_duplicate_ids(players):
     out = []
     _ids = []
@@ -48,7 +85,6 @@ def main():
     players = get_ids()
     data = process.performance_data(players)
     data.to_csv('player_data.csv')
-    # data = pd.read_csv('player_data.csv', low_memory=False).set_index('id')
     data = combine_data(players, data)
     build_team(data)
 
