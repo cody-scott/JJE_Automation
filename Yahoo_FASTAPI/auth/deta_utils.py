@@ -18,7 +18,10 @@ def load_token():
     except:
         return None
 
-def save_token(provider, token, *args, **kwargs):
+# def save_token(provider, token, *args, **kwargs):
+async def save_token(provider, token, *args, **kwargs):
     d = json.dumps(token, indent=4)
     drive.put(f'{local}token_f.json', d)
-    return token
+    def p(*args, **kwargs):
+        return token
+    return p

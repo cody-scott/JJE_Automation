@@ -52,7 +52,7 @@ class TeamModel(BaseModel):
     roster_adds: RosterAdds
     league_scoring_type: str
     has_draft_grade: str
-    managers: Managers
+    # managers: Managers
     is_owned_by_current_login: Optional[str] = None
 
 class TeamsModel(BaseModel):

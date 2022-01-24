@@ -46,6 +46,7 @@ async def auth_via_yahoo(request: Request):
     print('cb')
     token = await oauth.yahoo.authorize_access_token(request)
     deta_utils.save_token('yahoo', token)
+    return {'yes'}
     return token
 
 async def get_token():

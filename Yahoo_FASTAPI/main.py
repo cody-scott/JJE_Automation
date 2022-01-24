@@ -9,6 +9,7 @@ from typing import Optional
 from urllib.parse import urlencode
 import xmltodict
 from models import team_model, player_model
+import models
 
 from dotenv import load_dotenv
 import os
@@ -22,7 +23,9 @@ load_dotenv()
 league_id = os.environ['LEAGUE_ID']
 base_url = f"https://fantasysports.yahooapis.com/fantasy/v2/league/{league_id}"
 
-app = FastAPI()
+app = FastAPI(
+    tags=['yahoo']
+)
 app.add_middleware(SessionMiddleware, secret_key="some-random-string")
 
 app.include_router(auth_router)
@@ -64,24 +67,23 @@ async def yahoo_players(start_num: Optional[int]=0):
     rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
     return rf
 
-@app.get('/roster')
+@app.get('/roster', response_model=models.RosterModel)
 async def get_roster(team_id: int, roster_date: Optional[datetime.date]=None):
     token = await get_token()
-    url = f"https://fantasysports.yahooapis.com/fantasy/v2/team/{league_id}.t.{team_id}/roster/players"
+    url = f"https://fantasysports.yahooapis.com/fantasy/v2/team/{league_id}.t.{team_id}/roster"
     
     if roster_date is not None:
         date_str = roster_date.strftime("%Y-%m-%d")
         url += f";date={date_str}"
-
+    print(url)
     r = await oauth.yahoo.get(
         url,
         token=token
     )
-    rf = xmltodict.parse(r.content)
-    Path('data.json').write_text(json.dumps(r.content, indent=4))
-    return r.content
+    rf = xmltodict.parse(r.content)['fantasy_content']['team']['roster']
+    return rf
 
-
+@app.post('/transaction')
 async def post_changes(team_id: int, add_player_id: Optional[int]=None, drop_player_id: Optional[int]=None):
     if all([add_player_id, drop_player_id]):
         _tp = "add/drop"
@@ -108,6 +110,7 @@ async def post_changes(team_id: int, add_player_id: Optional[int]=None, drop_pla
 
 
     _url = "https://fantasysports.yahooapis.com/fantasy/v2/league/transactions"
+    return xml_data
 
 def format_player_xml(team_id: int, player_id: int, add_drop: str):
     return f"""<player>
