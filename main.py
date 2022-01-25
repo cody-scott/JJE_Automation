@@ -5,7 +5,7 @@ from pathlib import Path
 import datetime
 from deta import Deta
 
-from PerformanceData import process
+# from PerformanceData import process
 from Solver.solver import FantasyModel
 from Solver import player_class
 
@@ -34,13 +34,13 @@ def get_ids_2():
 def _get_fa():
     r = []
     for _ in range(0, 25*2, 25):
-        data = requests.get(f"https://panrau.deta.dev/players?start_num={_}").json()
+        data = requests.get(f"{deta_url}/players?start_num={_}").json()
         for p in data:
             if "G" in p['eligible_positions']['position']: continue
             f = dict(
                 id=p['player_id'],
                 name=p['name']['full'],
-                positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']],
+                positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']]+["Bench"],
                 team=p['editorial_team_full_name']
             )
             r.append(f)
@@ -55,7 +55,7 @@ def _get_my_team():
         f = dict(
             id=p['player_id'],
             name=p['name']['full'],
-            positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']],
+            positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']]+["Bench"],
             current_position=p['selected_position']['position'],
             team=p['editorial_team_full_name']
         )

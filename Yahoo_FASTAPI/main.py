@@ -46,11 +46,11 @@ async def yahoo_teams():
     return rf
 
 @app.get('/players', response_model=player_model.PlayersModel)
-async def yahoo_players(start_num: Optional[int]=0):
+async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="AR", start_num: Optional[int]=0):
     data = {
-                'status': "W",
-                "sort_type": "lastweek",
-                "sort": "AR",
+                'status': status,
+                "sort_type": sort_type,
+                "sort": sort,
     }
     if start_num is not None:
         data['start'] = start_num
