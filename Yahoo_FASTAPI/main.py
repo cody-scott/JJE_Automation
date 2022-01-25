@@ -1,5 +1,6 @@
 from audioop import add
-from fastapi import Depends, FastAPI
+from Yahoo_FASTAPI.models.player_model import PlayerModel
+from fastapi import Depends, FastAPI, HTTPException
 from starlette.middleware.sessions import SessionMiddleware
 
 from auth.auth import router as auth_router
@@ -72,10 +73,12 @@ async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="A
         url,
         token=token
     )
-    print(r.content)
-    
-    rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
-    return rf
+    try:
+        rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
+        out = player_model.PlayersModel(**rf)
+        return out
+    except Exception as e:
+        return HTTPException(status_code=500, detail=e)
 
 
 @app.get('/roster', response_model=models.RosterModel)

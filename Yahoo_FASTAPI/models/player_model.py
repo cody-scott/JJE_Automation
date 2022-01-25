@@ -54,9 +54,9 @@ class PlayerModel(BaseModel):
     editorial_team_key: str
     editorial_team_full_name: str
     editorial_team_abbr: str
-    uniform_number: str
-    display_position: str
-    headshot: Headshot
+    uniform_number: Optional[str] = None
+    display_position: Optional[str] = None
+    headshot: Optional[Headshot]
     image_url: str
     is_undroppable: str
     position_type: str
