@@ -10,13 +10,13 @@ class Player:
     name: str
     team: str
     positions: List[str]
-    g: int
-    a: int
-    p: int
-    pm: int
-    pim: int
-    ppp: int
-    gwg: int
+    goals: int
+    assists: int
+    points: int
+    plusMinus: int
+    penaltyMinutes: int
+    powerPlayPoints: int
+    gameWinningGoals: int
     hits: int
     
     protected: bool = False

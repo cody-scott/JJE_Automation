@@ -1,0 +1,3352 @@
+{
+    "4699": {
+        "yahoo_id": "4699",
+        "nhl_id": "8475184",
+        "name": "Chris Kreider"
+    },
+    "7114": {
+        "yahoo_id": "7114",
+        "nhl_id": "8479314",
+        "name": "Matthew Tkachuk"
+    },
+    "5470": {
+        "yahoo_id": "5470",
+        "nhl_id": "8476346",
+        "name": "Johnny Gaudreau"
+    },
+    "4779": {
+        "yahoo_id": "4779",
+        "nhl_id": "8475220",
+        "name": "Marcus Foligno"
+    },
+    "6791": {
+        "yahoo_id": "6791",
+        "nhl_id": "8478449",
+        "name": "Roope Hintz"
+    },
+    "6385": {
+        "yahoo_id": "6385",
+        "nhl_id": "8477950",
+        "name": "Tony DeAngelo"
+    },
+    "3985": {
+        "yahoo_id": "3985",
+        "nhl_id": "8470794",
+        "name": "Joe Pavelski"
+    },
+    "5367": {
+        "yahoo_id": "5367",
+        "nhl_id": "8476459",
+        "name": "Mika Zibanejad"
+    },
+    "7174": {
+        "yahoo_id": "7174",
+        "nhl_id": "8479323",
+        "name": "Adam Fox"
+    },
+    "6728": {
+        "yahoo_id": "6728",
+        "nhl_id": "8478550",
+        "name": "Artemi Panarin"
+    },
+    "7554": {
+        "yahoo_id": "7554",
+        "nhl_id": "8480027",
+        "name": "Jason Robertson"
+    },
+    "5689": {
+        "yahoo_id": "5689",
+        "nhl_id": "8476885",
+        "name": "Jacob Trouba"
+    },
+    "6391": {
+        "yahoo_id": "6391",
+        "nhl_id": "8477956",
+        "name": "David Pastrnak"
+    },
+    "7899": {
+        "yahoo_id": "7899",
+        "nhl_id": "8480839",
+        "name": "Rasmus Dahlin"
+    },
+    "6476": {
+        "yahoo_id": "6476",
+        "nhl_id": "8478038",
+        "name": "Devon Toews"
+    },
+    "7900": {
+        "yahoo_id": "7900",
+        "nhl_id": "8480830",
+        "name": "Andrei Svechnikov"
+    },
+    "3737": {
+        "yahoo_id": "3737",
+        "nhl_id": "8471675",
+        "name": "Sidney Crosby"
+    },
+    "4962": {
+        "yahoo_id": "4962",
+        "nhl_id": "8475794",
+        "name": "Tyler Seguin"
+    },
+    "5981": {
+        "yahoo_id": "5981",
+        "nhl_id": "8477493",
+        "name": "Aleksander Barkov"
+    },
+    "6777": {
+        "yahoo_id": "6777",
+        "nhl_id": "8480222",
+        "name": "Sebastian Aho"
+    },
+    "5696": {
+        "yahoo_id": "5696",
+        "nhl_id": "8476880",
+        "name": "Tom Wilson"
+    },
+    "6877": {
+        "yahoo_id": "6877",
+        "nhl_id": "8478864",
+        "name": "Kirill Kaprizov"
+    },
+    "4687": {
+        "yahoo_id": "4687",
+        "nhl_id": "8475172",
+        "name": "Nazem Kadri"
+    },
+    "3637": {
+        "yahoo_id": "3637",
+        "nhl_id": "8471214",
+        "name": "Alex Ovechkin"
+    },
+    "6369": {
+        "yahoo_id": "6369",
+        "nhl_id": "8477934",
+        "name": "Leon Draisaitl"
+    },
+    "7267": {
+        "yahoo_id": "7267",
+        "nhl_id": "8479407",
+        "name": "Jesper Bratt"
+    },
+    "5366": {
+        "yahoo_id": "5366",
+        "nhl_id": "8476458",
+        "name": "Ryan Strome"
+    },
+    "4471": {
+        "yahoo_id": "4471",
+        "nhl_id": "8474564",
+        "name": "Steven Stamkos"
+    },
+    "5364": {
+        "yahoo_id": "5364",
+        "nhl_id": "8476456",
+        "name": "Jonathan Huberdeau"
+    },
+    "5431": {
+        "yahoo_id": "5431",
+        "nhl_id": "8476389",
+        "name": "Vincent Trocheck"
+    },
+    "6005": {
+        "yahoo_id": "6005",
+        "nhl_id": "8477447",
+        "name": "Shea Theodore"
+    },
+    "7155": {
+        "yahoo_id": "7155",
+        "nhl_id": "8479398",
+        "name": "Samuel Girard"
+    },
+    "4683": {
+        "yahoo_id": "4683",
+        "nhl_id": "8475168",
+        "name": "Matt Duchene"
+    },
+    "7117": {
+        "yahoo_id": "7117",
+        "nhl_id": "8479410",
+        "name": "Mikhail Sergachev"
+    },
+    "4287": {
+        "yahoo_id": "4287",
+        "nhl_id": "8471274",
+        "name": "Alex Goligoski"
+    },
+    "5232": {
+        "yahoo_id": "5232",
+        "nhl_id": "8474716",
+        "name": "Jared Spurgeon"
+    },
+    "3982": {
+        "yahoo_id": "3982",
+        "nhl_id": "8473563",
+        "name": "Nicklas Backstrom"
+    },
+    "5363": {
+        "yahoo_id": "5363",
+        "nhl_id": "8476455",
+        "name": "Gabriel Landeskog"
+    },
+    "5053": {
+        "yahoo_id": "5053",
+        "nhl_id": "8475810",
+        "name": "Bryan Rust"
+    },
+    "6752": {
+        "yahoo_id": "6752",
+        "nhl_id": "8478420",
+        "name": "Mikko Rantanen"
+    },
+    "7111": {
+        "yahoo_id": "7111",
+        "nhl_id": "8479400",
+        "name": "Pierre-Luc Dubois"
+    },
+    "7636": {
+        "yahoo_id": "7636",
+        "nhl_id": "8480208",
+        "name": "Drake Batherson"
+    },
+    "4002": {
+        "yahoo_id": "4002",
+        "nhl_id": "8473512",
+        "name": "Claude Giroux"
+    },
+    "6759": {
+        "yahoo_id": "6759",
+        "nhl_id": "8478398",
+        "name": "Kyle Connor"
+    },
+    "7122": {
+        "yahoo_id": "7122",
+        "nhl_id": "8479325",
+        "name": "Charlie McAvoy"
+    },
+    "6038": {
+        "yahoo_id": "6038",
+        "nhl_id": "8477479",
+        "name": "Tyler Bertuzzi"
+    },
+    "4682": {
+        "yahoo_id": "4682",
+        "nhl_id": "8475167",
+        "name": "Victor Hedman"
+    },
+    "5104": {
+        "yahoo_id": "5104",
+        "nhl_id": "8475906",
+        "name": "John Klingberg"
+    },
+    "5810": {
+        "yahoo_id": "5810",
+        "nhl_id": "8476958",
+        "name": "Jaccob Slavin"
+    },
+    "5425": {
+        "yahoo_id": "5425",
+        "nhl_id": "8476453",
+        "name": "Nikita Kucherov"
+    },
+    "4849": {
+        "yahoo_id": "4849",
+        "nhl_id": "8473507",
+        "name": "Jeff Petry"
+    },
+    "6009": {
+        "yahoo_id": "6009",
+        "nhl_id": "8477451",
+        "name": "Ryan Hartman"
+    },
+    "6368": {
+        "yahoo_id": "6368",
+        "nhl_id": "8477933",
+        "name": "Sam Reinhart"
+    },
+    "5984": {
+        "yahoo_id": "5984",
+        "nhl_id": "8477496",
+        "name": "Elias Lindholm"
+    },
+    "7519": {
+        "yahoo_id": "7519",
+        "nhl_id": "8480069",
+        "name": "Cale Makar"
+    },
+    "3614": {
+        "yahoo_id": "3614",
+        "nhl_id": "8470966",
+        "name": "Mark Giordano"
+    },
+    "5980": {
+        "yahoo_id": "5980",
+        "nhl_id": "8477492",
+        "name": "Nathan MacKinnon"
+    },
+    "4253": {
+        "yahoo_id": "4253",
+        "nhl_id": "8474031",
+        "name": "Kevin Shattenkirk"
+    },
+    "6377": {
+        "yahoo_id": "6377",
+        "nhl_id": "8477942",
+        "name": "Kevin Fiala"
+    },
+    "3383": {
+        "yahoo_id": "3383",
+        "nhl_id": "8470638",
+        "name": "Patrice Bergeron"
+    },
+    "5626": {
+        "yahoo_id": "5626",
+        "nhl_id": "8473986",
+        "name": "Alex Killorn"
+    },
+    "5698": {
+        "yahoo_id": "5698",
+        "nhl_id": "8476882",
+        "name": "Teuvo Teravainen"
+    },
+    "7365": {
+        "yahoo_id": "7365",
+        "nhl_id": "8479661",
+        "name": "Tanner Jeannot"
+    },
+    "4986": {
+        "yahoo_id": "4986",
+        "nhl_id": "8475744",
+        "name": "Evgeny Kuznetsov"
+    },
+    "5985": {
+        "yahoo_id": "5985",
+        "nhl_id": "8477497",
+        "name": "Sean Monahan"
+    },
+    "5039": {
+        "yahoo_id": "5039",
+        "nhl_id": "8475462",
+        "name": "Radko Gudas"
+    },
+    "6762": {
+        "yahoo_id": "6762",
+        "nhl_id": "8478493",
+        "name": "Joel Eriksson Ek"
+    },
+    "4685": {
+        "yahoo_id": "4685",
+        "nhl_id": "8475170",
+        "name": "Brayden Schenn"
+    },
+    "5010": {
+        "yahoo_id": "5010",
+        "nhl_id": "8475753",
+        "name": "Justin Faulk"
+    },
+    "5368": {
+        "yahoo_id": "5368",
+        "nhl_id": "8476460",
+        "name": "Mark Scheifele"
+    },
+    "6367": {
+        "yahoo_id": "6367",
+        "nhl_id": "8477932",
+        "name": "Aaron Ekblad"
+    },
+    "7213": {
+        "yahoo_id": "7213",
+        "nhl_id": "8479520",
+        "name": "Brandon Duhaime"
+    },
+    "5632": {
+        "yahoo_id": "5632",
+        "nhl_id": "8476792",
+        "name": "Torey Krug"
+    },
+    "5691": {
+        "yahoo_id": "5691",
+        "nhl_id": "8476887",
+        "name": "Filip Forsberg"
+    },
+    "4064": {
+        "yahoo_id": "4064",
+        "nhl_id": "8471724",
+        "name": "Kris Letang"
+    },
+    "3638": {
+        "yahoo_id": "3638",
+        "nhl_id": "8471215",
+        "name": "Evgeni Malkin"
+    },
+    "4805": {
+        "yahoo_id": "4805",
+        "nhl_id": "8474884",
+        "name": "Mike Hoffman"
+    },
+    "7110": {
+        "yahoo_id": "7110",
+        "nhl_id": "8479339",
+        "name": "Patrik Laine"
+    },
+    "7902": {
+        "yahoo_id": "7902",
+        "nhl_id": "8480801",
+        "name": "Brady Tkachuk"
+    },
+    "5989": {
+        "yahoo_id": "5989",
+        "nhl_id": "8477501",
+        "name": "Valeri Nichushkin"
+    },
+    "4976": {
+        "yahoo_id": "4976",
+        "nhl_id": "8475765",
+        "name": "Vladimir Tarasenko"
+    },
+    "6765": {
+        "yahoo_id": "6765",
+        "nhl_id": "8478444",
+        "name": "Brock Boeser"
+    },
+    "6753": {
+        "yahoo_id": "6753",
+        "nhl_id": "8478474",
+        "name": "Lawson Crouse"
+    },
+    "5712": {
+        "yahoo_id": "5712",
+        "nhl_id": "8476539",
+        "name": "Jonathan Marchessault"
+    },
+    "4990": {
+        "yahoo_id": "4990",
+        "nhl_id": "8475754",
+        "name": "Brock Nelson"
+    },
+    "4969": {
+        "yahoo_id": "4969",
+        "nhl_id": "8475798",
+        "name": "Mikael Granlund"
+    },
+    "7905": {
+        "yahoo_id": "7905",
+        "nhl_id": "8480800",
+        "name": "Quinn Hughes"
+    },
+    "7518": {
+        "yahoo_id": "7518",
+        "nhl_id": "8480036",
+        "name": "Miro Heiskanen"
+    },
+    "5254": {
+        "yahoo_id": "5254",
+        "nhl_id": "8475200",
+        "name": "Dmitry Orlov"
+    },
+    "6060": {
+        "yahoo_id": "6060",
+        "nhl_id": "8477407",
+        "name": "Anthony Duclair"
+    },
+    "5992": {
+        "yahoo_id": "5992",
+        "nhl_id": "8477504",
+        "name": "Josh Morrissey"
+    },
+    "6766": {
+        "yahoo_id": "6766",
+        "nhl_id": "8478439",
+        "name": "Travis Konecny"
+    },
+    "6746": {
+        "yahoo_id": "6746",
+        "nhl_id": "8478483",
+        "name": "Mitchell Marner"
+    },
+    "6370": {
+        "yahoo_id": "6370",
+        "nhl_id": "8477935",
+        "name": "Sam Bennett"
+    },
+    "3349": {
+        "yahoo_id": "3349",
+        "nhl_id": "8470604",
+        "name": "Jeff Carter"
+    },
+    "5282": {
+        "yahoo_id": "5282",
+        "nhl_id": "8474715",
+        "name": "Cam Atkinson"
+    },
+    "6743": {
+        "yahoo_id": "6743",
+        "nhl_id": "8478402",
+        "name": "Connor McDavid"
+    },
+    "7908": {
+        "yahoo_id": "7908",
+        "nhl_id": "8480803",
+        "name": "Evan Bouchard"
+    },
+    "6083": {
+        "yahoo_id": "6083",
+        "nhl_id": "8477429",
+        "name": "Andrew Copp"
+    },
+    "4246": {
+        "yahoo_id": "4246",
+        "nhl_id": "8474161",
+        "name": "Jakub Voracek"
+    },
+    "5685": {
+        "yahoo_id": "5685",
+        "nhl_id": "8476853",
+        "name": "Morgan Rielly"
+    },
+    "7520": {
+        "yahoo_id": "7520",
+        "nhl_id": "8480012",
+        "name": "Elias Pettersson"
+    },
+    "8279": {
+        "yahoo_id": "8279",
+        "nhl_id": "8481559",
+        "name": "Jack Hughes"
+    },
+    "5697": {
+        "yahoo_id": "5697",
+        "nhl_id": "8476881",
+        "name": "Tomas Hertl"
+    },
+    "6448": {
+        "yahoo_id": "6448",
+        "nhl_id": "8478010",
+        "name": "Brayden Point"
+    },
+    "4930": {
+        "yahoo_id": "4930",
+        "nhl_id": "8474600",
+        "name": "Roman Josi"
+    },
+    "4472": {
+        "yahoo_id": "4472",
+        "nhl_id": "8474563",
+        "name": "Drew Doughty"
+    },
+    "3641": {
+        "yahoo_id": "3641",
+        "nhl_id": "8471218",
+        "name": "Blake Wheeler"
+    },
+    "6760": {
+        "yahoo_id": "6760",
+        "nhl_id": "8478469",
+        "name": "Thomas Chabot"
+    },
+    "6751": {
+        "yahoo_id": "6751",
+        "nhl_id": "8478414",
+        "name": "Timo Meier"
+    },
+    "6890": {
+        "yahoo_id": "6890",
+        "nhl_id": "8478873",
+        "name": "Troy Terry"
+    },
+    "6057": {
+        "yahoo_id": "6057",
+        "nhl_id": "8477404",
+        "name": "Jake Guentzel"
+    },
+    "7143": {
+        "yahoo_id": "7143",
+        "nhl_id": "8479385",
+        "name": "Jordan Kyrou"
+    },
+    "4961": {
+        "yahoo_id": "4961",
+        "nhl_id": "8475791",
+        "name": "Taylor Hall"
+    },
+    "3979": {
+        "yahoo_id": "3979",
+        "nhl_id": "8473446",
+        "name": "Erik Johnson"
+    },
+    "7534": {
+        "yahoo_id": "7534",
+        "nhl_id": "8480064",
+        "name": "Josh Norris"
+    },
+    "6062": {
+        "yahoo_id": "6062",
+        "nhl_id": "8477409",
+        "name": "Carter Verhaeghe"
+    },
+    "7498": {
+        "yahoo_id": "7498",
+        "nhl_id": "8480145",
+        "name": "Neal Pionk"
+    },
+    "4265": {
+        "yahoo_id": "4265",
+        "nhl_id": "8474102",
+        "name": "David Perron"
+    },
+    "5329": {
+        "yahoo_id": "5329",
+        "nhl_id": "8475218",
+        "name": "Mattias Ekholm"
+    },
+    "4351": {
+        "yahoo_id": "4351",
+        "nhl_id": "8473419",
+        "name": "Brad Marchand"
+    },
+    "8294": {
+        "yahoo_id": "8294",
+        "nhl_id": "8481618",
+        "name": "Alex Newhook"
+    },
+    "5376": {
+        "yahoo_id": "5376",
+        "nhl_id": "8476468",
+        "name": "J.T. Miller"
+    },
+    "4519": {
+        "yahoo_id": "4519",
+        "nhl_id": "8473994",
+        "name": "Jamie Benn"
+    },
+    "3788": {
+        "yahoo_id": "3788",
+        "nhl_id": "8471685",
+        "name": "Anze Kopitar"
+    },
+    "7912": {
+        "yahoo_id": "7912",
+        "nhl_id": "8480797",
+        "name": "Joel Farabee"
+    },
+    "5687": {
+        "yahoo_id": "5687",
+        "nhl_id": "8476856",
+        "name": "Matt Dumba"
+    },
+    "6758": {
+        "yahoo_id": "6758",
+        "nhl_id": "8478445",
+        "name": "Mathew Barzal"
+    },
+    "4972": {
+        "yahoo_id": "4972",
+        "nhl_id": "8475764",
+        "name": "Cam Fowler"
+    },
+    "6749": {
+        "yahoo_id": "6749",
+        "nhl_id": "8478500",
+        "name": "Ivan Provorov"
+    },
+    "6374": {
+        "yahoo_id": "6374",
+        "nhl_id": "8477939",
+        "name": "William Nylander"
+    },
+    "8652": {
+        "yahoo_id": "8652",
+        "nhl_id": "8482113",
+        "name": "Anton Lundell"
+    },
+    "4786": {
+        "yahoo_id": "4786",
+        "nhl_id": "8475158",
+        "name": "Ryan O'Reilly"
+    },
+    "5983": {
+        "yahoo_id": "5983",
+        "nhl_id": "8477495",
+        "name": "Seth Jones"
+    },
+    "6002": {
+        "yahoo_id": "6002",
+        "nhl_id": "8477444",
+        "name": "Andre Burakovsky"
+    },
+    "6390": {
+        "yahoo_id": "6390",
+        "nhl_id": "8477955",
+        "name": "Jared McCann"
+    },
+    "5768": {
+        "yahoo_id": "5768",
+        "nhl_id": "8476905",
+        "name": "Chandler Stephenson"
+    },
+    "4248": {
+        "yahoo_id": "4248",
+        "nhl_id": "8474053",
+        "name": "Logan Couture"
+    },
+    "7161": {
+        "yahoo_id": "7161",
+        "nhl_id": "8479425",
+        "name": "Filip Hronek"
+    },
+    "8288": {
+        "yahoo_id": "8288",
+        "nhl_id": "8481617",
+        "name": "Vasily Podkolzin"
+    },
+    "7527": {
+        "yahoo_id": "7527",
+        "nhl_id": "8480039",
+        "name": "Martin Necas"
+    },
+    "6055": {
+        "yahoo_id": "6055",
+        "nhl_id": "8477402",
+        "name": "Pavel Buchnevich"
+    },
+    "8644": {
+        "yahoo_id": "8644",
+        "nhl_id": "8482078",
+        "name": "Lucas Raymond"
+    },
+    "7147": {
+        "yahoo_id": "7147",
+        "nhl_id": "8479337",
+        "name": "Alex DeBrincat"
+    },
+    "7535": {
+        "yahoo_id": "7535",
+        "nhl_id": "8480023",
+        "name": "Robert Thomas"
+    },
+    "4681": {
+        "yahoo_id": "4681",
+        "nhl_id": "8475166",
+        "name": "John Tavares"
+    },
+    "4240": {
+        "yahoo_id": "4240",
+        "nhl_id": "8474141",
+        "name": "Patrick Kane"
+    },
+    "6908": {
+        "yahoo_id": "6908",
+        "nhl_id": "8478233",
+        "name": "Andrew Mangiapane"
+    },
+    "6068": {
+        "yahoo_id": "6068",
+        "nhl_id": "8477416",
+        "name": "Oliver Bjorkstrand"
+    },
+    "8284": {
+        "yahoo_id": "8284",
+        "nhl_id": "8481542",
+        "name": "Moritz Seider"
+    },
+    "8287": {
+        "yahoo_id": "8287",
+        "nhl_id": "8481533",
+        "name": "Trevor Zegras"
+    },
+    "6485": {
+        "yahoo_id": "6485",
+        "nhl_id": "8478047",
+        "name": "Michael Bunting"
+    },
+    "5840": {
+        "yahoo_id": "5840",
+        "nhl_id": "8477021",
+        "name": "Alexander Kerfoot"
+    },
+    "4474": {
+        "yahoo_id": "4474",
+        "nhl_id": "8474565",
+        "name": "Alex Pietrangelo"
+    },
+    "5958": {
+        "yahoo_id": "5958",
+        "nhl_id": "8475324",
+        "name": "Nick Jensen"
+    },
+    "6726": {
+        "yahoo_id": "6726",
+        "nhl_id": "8478542",
+        "name": "Evan Rodrigues"
+    },
+    "7124": {
+        "yahoo_id": "7124",
+        "nhl_id": "8479345",
+        "name": "Jakob Chychrun"
+    },
+    "6402": {
+        "yahoo_id": "6402",
+        "nhl_id": "8477964",
+        "name": "Ivan Barbashev"
+    },
+    "5986": {
+        "yahoo_id": "5986",
+        "nhl_id": "8477498",
+        "name": "Darnell Nurse"
+    },
+    "6184": {
+        "yahoo_id": "6184",
+        "nhl_id": "8477346",
+        "name": "MacKenzie Weegar"
+    },
+    "4503": {
+        "yahoo_id": "4503",
+        "nhl_id": "8474590",
+        "name": "John Carlson"
+    },
+    "7910": {
+        "yahoo_id": "7910",
+        "nhl_id": "8480865",
+        "name": "Noah Dobson"
+    },
+    "6750": {
+        "yahoo_id": "6750",
+        "nhl_id": "8478460",
+        "name": "Zach Werenski"
+    },
+    "5639": {
+        "yahoo_id": "5639",
+        "nhl_id": "8475191",
+        "name": "Reilly Smith"
+    },
+    "4207": {
+        "yahoo_id": "4207",
+        "nhl_id": "8471887",
+        "name": "Patric Hornqvist"
+    },
+    "5281": {
+        "yahoo_id": "5281",
+        "nhl_id": "8475197",
+        "name": "Tyson Barrie"
+    },
+    "6375": {
+        "yahoo_id": "6375",
+        "nhl_id": "8477940",
+        "name": "Nikolaj Ehlers"
+    },
+    "4693": {
+        "yahoo_id": "4693",
+        "nhl_id": "8475178",
+        "name": "Zack Kassian"
+    },
+    "7112": {
+        "yahoo_id": "7112",
+        "nhl_id": "8479344",
+        "name": "Jesse Puljujarvi"
+    },
+    "7109": {
+        "yahoo_id": "7109",
+        "nhl_id": "8479318",
+        "name": "Auston Matthews"
+    },
+    "3358": {
+        "yahoo_id": "3358",
+        "nhl_id": "8470613",
+        "name": "Brent Burns"
+    },
+    "3885": {
+        "yahoo_id": "3885",
+        "nhl_id": "8471735",
+        "name": "Keith Yandle"
+    },
+    "4491": {
+        "yahoo_id": "4491",
+        "nhl_id": "8474578",
+        "name": "Erik Karlsson"
+    },
+    "8282": {
+        "yahoo_id": "8282",
+        "nhl_id": "8481524",
+        "name": "Bowen Byram"
+    },
+    "8293": {
+        "yahoo_id": "8293",
+        "nhl_id": "8481540",
+        "name": "Cole Caufield"
+    },
+    "4261": {
+        "yahoo_id": "4261",
+        "nhl_id": "8474157",
+        "name": "Max Pacioretty"
+    },
+    "4691": {
+        "yahoo_id": "4691",
+        "nhl_id": "8475176",
+        "name": "Ryan Ellis"
+    },
+    "4819": {
+        "yahoo_id": "4819",
+        "nhl_id": "8474162",
+        "name": "Jake Muzzin"
+    },
+    "5096": {
+        "yahoo_id": "5096",
+        "nhl_id": "8475786",
+        "name": "Zach Hyman"
+    },
+    "5152": {
+        "yahoo_id": "5152",
+        "nhl_id": "8475913",
+        "name": "Mark Stone"
+    },
+    "5362": {
+        "yahoo_id": "5362",
+        "nhl_id": "8476454",
+        "name": "Ryan Nugent-Hopkins"
+    },
+    "5369": {
+        "yahoo_id": "5369",
+        "nhl_id": "8476461",
+        "name": "Sean Couturier"
+    },
+    "5370": {
+        "yahoo_id": "5370",
+        "nhl_id": "8476462",
+        "name": "Dougie Hamilton"
+    },
+    "5573": {
+        "yahoo_id": "5573",
+        "nhl_id": "8476292",
+        "name": "Ondrej Palat"
+    },
+    "5994": {
+        "yahoo_id": "5994",
+        "nhl_id": "8477506",
+        "name": "Ryan Pulock"
+    },
+    "6744": {
+        "yahoo_id": "6744",
+        "nhl_id": "8478403",
+        "name": "Jack Eichel"
+    },
+    "7570": {
+        "yahoo_id": "7570",
+        "nhl_id": "8479981",
+        "name": "Jonah Gadjovich"
+    },
+    "3801": {
+        "yahoo_id": "3801",
+        "nhl_id": "8471698",
+        "name": "T.J. Oshie"
+    },
+    "5703": {
+        "yahoo_id": "5703",
+        "nhl_id": "8476875",
+        "name": "Mike Matheson"
+    },
+    "4921": {
+        "yahoo_id": "4921",
+        "nhl_id": "8475692",
+        "name": "Mats Zuccarello"
+    },
+    "7528": {
+        "yahoo_id": "7528",
+        "nhl_id": "8480018",
+        "name": "Nick Suzuki"
+    },
+    "5785": {
+        "yahoo_id": "5785",
+        "nhl_id": "8476981",
+        "name": "Josh Anderson"
+    },
+    "6427": {
+        "yahoo_id": "6427",
+        "nhl_id": "8477989",
+        "name": "Christian Dvorak"
+    },
+    "6384": {
+        "yahoo_id": "6384",
+        "nhl_id": "8477949",
+        "name": "Alex Tuch"
+    },
+    "7901": {
+        "yahoo_id": "7901",
+        "nhl_id": "8480829",
+        "name": "Jesperi Kotkaniemi"
+    },
+    "7990": {
+        "yahoo_id": "7990",
+        "nhl_id": "8480980",
+        "name": "Connor Dewar"
+    },
+    "5402": {
+        "yahoo_id": "5402",
+        "nhl_id": "8476429",
+        "name": "Scott Mayfield"
+    },
+    "6862": {
+        "yahoo_id": "6862",
+        "nhl_id": "8478472",
+        "name": "Mathieu Joseph"
+    },
+    "7134": {
+        "yahoo_id": "7134",
+        "nhl_id": "8479420",
+        "name": "Tage Thompson"
+    },
+    "7265": {
+        "yahoo_id": "7265",
+        "nhl_id": "8479543",
+        "name": "Michael Pezzetta"
+    },
+    "4967": {
+        "yahoo_id": "4967",
+        "nhl_id": "8475784",
+        "name": "Jeff Skinner"
+    },
+    "6792": {
+        "yahoo_id": "6792",
+        "nhl_id": "8478413",
+        "name": "Jordan Greenway"
+    },
+    "6910": {
+        "yahoo_id": "6910",
+        "nhl_id": "8478891",
+        "name": "Mason Appleton"
+    },
+    "5020": {
+        "yahoo_id": "5020",
+        "nhl_id": "8475726",
+        "name": "Tyler Toffoli"
+    },
+    "8295": {
+        "yahoo_id": "8295",
+        "nhl_id": "8481522",
+        "name": "Peyton Krebs"
+    },
+    "5987": {
+        "yahoo_id": "5987",
+        "nhl_id": "8477499",
+        "name": "Rasmus Ristolainen"
+    },
+    "6795": {
+        "yahoo_id": "6795",
+        "nhl_id": "8478397",
+        "name": "Rasmus Andersson"
+    },
+    "7149": {
+        "yahoo_id": "7149",
+        "nhl_id": "8479414",
+        "name": "Nathan Bastian"
+    },
+    "5686": {
+        "yahoo_id": "5686",
+        "nhl_id": "8476854",
+        "name": "Hampus Lindholm"
+    },
+    "4186": {
+        "yahoo_id": "4186",
+        "nhl_id": "8471817",
+        "name": "Ryan Reaves"
+    },
+    "7165": {
+        "yahoo_id": "7165",
+        "nhl_id": "8479336",
+        "name": "Carl Grundstrom"
+    },
+    "4629": {
+        "yahoo_id": "4629",
+        "nhl_id": "8475098",
+        "name": "Tyler Bozak"
+    },
+    "5024": {
+        "yahoo_id": "5024",
+        "nhl_id": "8475714",
+        "name": "Calle Jarnkrok"
+    },
+    "6555": {
+        "yahoo_id": "6555",
+        "nhl_id": "8478115",
+        "name": "Pierre Engvall"
+    },
+    "8285": {
+        "yahoo_id": "8285",
+        "nhl_id": "8481528",
+        "name": "Dylan Cozens"
+    },
+    "5498": {
+        "yahoo_id": "5498",
+        "nhl_id": "8476374",
+        "name": "Sean Kuraly"
+    },
+    "5995": {
+        "yahoo_id": "5995",
+        "nhl_id": "8477507",
+        "name": "Nikita Zadorov"
+    },
+    "5946": {
+        "yahoo_id": "5946",
+        "nhl_id": "8475287",
+        "name": "Erik Haula"
+    },
+    "4964": {
+        "yahoo_id": "4964",
+        "nhl_id": "8475793",
+        "name": "Ryan Johansen"
+    },
+    "5441": {
+        "yahoo_id": "5441",
+        "nhl_id": "8476399",
+        "name": "Blake Coleman"
+    },
+    "6747": {
+        "yahoo_id": "6747",
+        "nhl_id": "8478396",
+        "name": "Noah Hanifin"
+    },
+    "4978": {
+        "yahoo_id": "4978",
+        "nhl_id": "8475766",
+        "name": "Austin Watson"
+    },
+    "5659": {
+        "yahoo_id": "5659",
+        "nhl_id": "8475208",
+        "name": "Brian Dumoulin"
+    },
+    "6180": {
+        "yahoo_id": "6180",
+        "nhl_id": "8477341",
+        "name": "Andreas Johnsson"
+    },
+    "5261": {
+        "yahoo_id": "5261",
+        "nhl_id": "8474697",
+        "name": "Mark Borowiecki"
+    },
+    "6857": {
+        "yahoo_id": "6857",
+        "nhl_id": "8478851",
+        "name": "Alexandre Carrier"
+    },
+    "7584": {
+        "yahoo_id": "7584",
+        "nhl_id": "8480025",
+        "name": "MacKenzie Entwistle"
+    },
+    "5260": {
+        "yahoo_id": "5260",
+        "nhl_id": "8474683",
+        "name": "Derek Grant"
+    },
+    "7920": {
+        "yahoo_id": "7920",
+        "nhl_id": "8480817",
+        "name": "K'Andre Miller"
+    },
+    "5701": {
+        "yahoo_id": "5701",
+        "nhl_id": "8476873",
+        "name": "Mark Jankowski"
+    },
+    "8302": {
+        "yahoo_id": "8302",
+        "nhl_id": "8481577",
+        "name": "Philip Tomasino"
+    },
+    "7647": {
+        "yahoo_id": "7647",
+        "nhl_id": "8480216",
+        "name": "Jacob Peterson"
+    },
+    "4251": {
+        "yahoo_id": "4251",
+        "nhl_id": "8474151",
+        "name": "Ryan McDonagh"
+    },
+    "7544": {
+        "yahoo_id": "7544",
+        "nhl_id": "8480035",
+        "name": "Henri Jokiharju"
+    },
+    "4257": {
+        "yahoo_id": "4257",
+        "nhl_id": "8474013",
+        "name": "Ian Cole"
+    },
+    "4252": {
+        "yahoo_id": "4252",
+        "nhl_id": "8474189",
+        "name": "Lars Eller"
+    },
+    "7493": {
+        "yahoo_id": "7493",
+        "nhl_id": "8480113",
+        "name": "Alex Iafallo"
+    },
+    "6054": {
+        "yahoo_id": "6054",
+        "nhl_id": "8477401",
+        "name": "John Hayden"
+    },
+    "7525": {
+        "yahoo_id": "7525",
+        "nhl_id": "8480015",
+        "name": "Owen Tippett"
+    },
+    "7618": {
+        "yahoo_id": "7618",
+        "nhl_id": "8479998",
+        "name": "Mikey Anderson"
+    },
+    "6117": {
+        "yahoo_id": "6117",
+        "nhl_id": "8477369",
+        "name": "Carson Soucy"
+    },
+    "5982": {
+        "yahoo_id": "5982",
+        "nhl_id": "8477494",
+        "name": "Jonathan Drouin"
+    },
+    "7224": {
+        "yahoo_id": "7224",
+        "nhl_id": "8479525",
+        "name": "Ross Colton"
+    },
+    "5756": {
+        "yahoo_id": "5756",
+        "nhl_id": "8476917",
+        "name": "Adam Pelech"
+    },
+    "5405": {
+        "yahoo_id": "5405",
+        "nhl_id": "8476432",
+        "name": "Boone Jenner"
+    },
+    "6388": {
+        "yahoo_id": "6388",
+        "nhl_id": "8477953",
+        "name": "Kasperi Kapanen"
+    },
+    "7120": {
+        "yahoo_id": "7120",
+        "nhl_id": "8479415",
+        "name": "Michael McLeod"
+    },
+    "6290": {
+        "yahoo_id": "6290",
+        "nhl_id": "8476624",
+        "name": "Barclay Goodrow"
+    },
+    "8653": {
+        "yahoo_id": "8653",
+        "nhl_id": "8482093",
+        "name": "Seth Jarvis"
+    },
+    "5411": {
+        "yahoo_id": "5411",
+        "nhl_id": "8476438",
+        "name": "Brandon Saad"
+    },
+    "6636": {
+        "yahoo_id": "6636",
+        "nhl_id": "8477903",
+        "name": "Garnet Hathaway"
+    },
+    "8245": {
+        "yahoo_id": "8245",
+        "nhl_id": "8481477",
+        "name": "Nico Sturm"
+    },
+    "5421": {
+        "yahoo_id": "5421",
+        "nhl_id": "8476448",
+        "name": "William Karlsson"
+    },
+    "6616": {
+        "yahoo_id": "6616",
+        "nhl_id": "8477070",
+        "name": "Liam O'Brien"
+    },
+    "7123": {
+        "yahoo_id": "7123",
+        "nhl_id": "8479316",
+        "name": "Luke Kunin"
+    },
+    "5647": {
+        "yahoo_id": "5647",
+        "nhl_id": "8476807",
+        "name": "Matt Tennyson"
+    },
+    "7545": {
+        "yahoo_id": "7545",
+        "nhl_id": "8480009",
+        "name": "Eeli Tolvanen"
+    },
+    "3371": {
+        "yahoo_id": "3371",
+        "nhl_id": "8470626",
+        "name": "Loui Eriksson"
+    },
+    "4992": {
+        "yahoo_id": "4992",
+        "nhl_id": "8474613",
+        "name": "Derek Stepan"
+    },
+    "7516": {
+        "yahoo_id": "7516",
+        "nhl_id": "8480002",
+        "name": "Nico Hischier"
+    },
+    "5035": {
+        "yahoo_id": "5035",
+        "nhl_id": "8475735",
+        "name": "Greg McKegg"
+    },
+    "6041": {
+        "yahoo_id": "6041",
+        "nhl_id": "8477482",
+        "name": "Zach Sanford"
+    },
+    "6756": {
+        "yahoo_id": "6756",
+        "nhl_id": "8478498",
+        "name": "Jake DeBrusk"
+    },
+    "6400": {
+        "yahoo_id": "6400",
+        "nhl_id": "8477962",
+        "name": "Brendan Lemieux"
+    },
+    "7562": {
+        "yahoo_id": "7562",
+        "nhl_id": "8480029",
+        "name": "Alex Formenton"
+    },
+    "5710": {
+        "yahoo_id": "5710",
+        "nhl_id": "8476871",
+        "name": "Tanner Pearson"
+    },
+    "3345": {
+        "yahoo_id": "3345",
+        "nhl_id": "8470600",
+        "name": "Ryan Suter"
+    },
+    "5387": {
+        "yahoo_id": "5387",
+        "nhl_id": "8476479",
+        "name": "Phillip Danault"
+    },
+    "7481": {
+        "yahoo_id": "7481",
+        "nhl_id": "8479968",
+        "name": "Vinni Lettieri"
+    },
+    "5749": {
+        "yahoo_id": "5749",
+        "nhl_id": "8476923",
+        "name": "Damon Severson"
+    },
+    "5683": {
+        "yahoo_id": "5683",
+        "nhl_id": "8476851",
+        "name": "Alex Galchenyuk"
+    },
+    "6814": {
+        "yahoo_id": "6814",
+        "nhl_id": "8478519",
+        "name": "Anthony Cirelli"
+    },
+    "5700": {
+        "yahoo_id": "5700",
+        "nhl_id": "8476872",
+        "name": "Scott Laughton"
+    },
+    "5345": {
+        "yahoo_id": "5345",
+        "nhl_id": "8475235",
+        "name": "Nicolas Deslauriers"
+    },
+    "5434": {
+        "yahoo_id": "5434",
+        "nhl_id": "8476392",
+        "name": "Adam Lowry"
+    },
+    "4754": {
+        "yahoo_id": "4754",
+        "nhl_id": "8474709",
+        "name": "Matt Martin"
+    },
+    "4935": {
+        "yahoo_id": "4935",
+        "nhl_id": "8475690",
+        "name": "Christopher Tanev"
+    },
+    "4194": {
+        "yahoo_id": "4194",
+        "nhl_id": "8473504",
+        "name": "Cal Clutterbuck"
+    },
+    "4965": {
+        "yahoo_id": "4965",
+        "nhl_id": "8475799",
+        "name": "Nino Niederreiter"
+    },
+    "8249": {
+        "yahoo_id": "8249",
+        "nhl_id": "8481481",
+        "name": "Blake Lizotte"
+    },
+    "5864": {
+        "yahoo_id": "5864",
+        "nhl_id": "8476988",
+        "name": "Matt Benning"
+    },
+    "5648": {
+        "yahoo_id": "5648",
+        "nhl_id": "8475163",
+        "name": "Alex Chiasson"
+    },
+    "5776": {
+        "yahoo_id": "5776",
+        "nhl_id": "8476891",
+        "name": "Matt Grzelcyk"
+    },
+    "5011": {
+        "yahoo_id": "5011",
+        "nhl_id": "8475750",
+        "name": "Jon Merrill"
+    },
+    "6794": {
+        "yahoo_id": "6794",
+        "nhl_id": "8478468",
+        "name": "Jeremy Lauzon"
+    },
+    "6365": {
+        "yahoo_id": "6365",
+        "nhl_id": "8477930",
+        "name": "Pierre-Edouard Bellemare"
+    },
+    "7131": {
+        "yahoo_id": "7131",
+        "nhl_id": "8479404",
+        "name": "Henrik Borgstrom"
+    },
+    "3357": {
+        "yahoo_id": "3357",
+        "nhl_id": "8470612",
+        "name": "Ryan Getzlaf"
+    },
+    "6089": {
+        "yahoo_id": "6089",
+        "nhl_id": "8477435",
+        "name": "Ryan Graves"
+    },
+    "7384": {
+        "yahoo_id": "7384",
+        "nhl_id": "8479772",
+        "name": "Zack MacEwen"
+    },
+    "6035": {
+        "yahoo_id": "6035",
+        "nhl_id": "8477476",
+        "name": "Artturi Lehkonen"
+    },
+    "7157": {
+        "yahoo_id": "7157",
+        "nhl_id": "8479324",
+        "name": "Ryan Lindgren"
+    },
+    "7432": {
+        "yahoo_id": "7432",
+        "nhl_id": "8479291",
+        "name": "Kevin Rooney"
+    },
+    "6458": {
+        "yahoo_id": "6458",
+        "nhl_id": "8478020",
+        "name": "Michael Amadio"
+    },
+    "6501": {
+        "yahoo_id": "6501",
+        "nhl_id": "8478062",
+        "name": "Dysin Mayo"
+    },
+    "8648": {
+        "yahoo_id": "8648",
+        "nhl_id": "8482097",
+        "name": "Jack Quinn"
+    },
+    "6745": {
+        "yahoo_id": "6745",
+        "nhl_id": "8478440",
+        "name": "Dylan Strome"
+    },
+    "5765": {
+        "yahoo_id": "5765",
+        "nhl_id": "8476902",
+        "name": "Esa Lindell"
+    },
+    "5391": {
+        "yahoo_id": "5391",
+        "nhl_id": "8476483",
+        "name": "Rickard Rakell"
+    },
+    "4482": {
+        "yahoo_id": "4482",
+        "nhl_id": "8474573",
+        "name": "Josh Bailey"
+    },
+    "4963": {
+        "yahoo_id": "4963",
+        "nhl_id": "8475790",
+        "name": "Erik Gudbranson"
+    },
+    "7184": {
+        "yahoo_id": "7184",
+        "nhl_id": "8479514",
+        "name": "Rem Pitlick"
+    },
+    "7951": {
+        "yahoo_id": "7951",
+        "nhl_id": "8480884",
+        "name": "Calen Addison"
+    },
+    "4008": {
+        "yahoo_id": "4008",
+        "nhl_id": "8473422",
+        "name": "Nick Foligno"
+    },
+    "6955": {
+        "yahoo_id": "6955",
+        "nhl_id": "8477810",
+        "name": "Joel Hanley"
+    },
+    "3355": {
+        "yahoo_id": "3355",
+        "nhl_id": "8470610",
+        "name": "Zach Parise"
+    },
+    "7044": {
+        "yahoo_id": "7044",
+        "nhl_id": "8479066",
+        "name": "Ryan Lomberg"
+    },
+    "6417": {
+        "yahoo_id": "6417",
+        "nhl_id": "8477979",
+        "name": "Nicolas Aube-Kubel"
+    },
+    "8369": {
+        "yahoo_id": "8369",
+        "nhl_id": "8481656",
+        "name": "Aliaksei Protas"
+    },
+    "8273": {
+        "yahoo_id": "8273",
+        "nhl_id": "8481641",
+        "name": "Joel Kiviranta"
+    },
+    "4773": {
+        "yahoo_id": "4773",
+        "nhl_id": "8475231",
+        "name": "Casey Cizikas"
+    },
+    "5772": {
+        "yahoo_id": "5772",
+        "nhl_id": "8476897",
+        "name": "Oskar Sundqvist"
+    },
+    "6770": {
+        "yahoo_id": "6770",
+        "nhl_id": "8478463",
+        "name": "Anthony Beauvillier"
+    },
+    "3363": {
+        "yahoo_id": "3363",
+        "nhl_id": "8470619",
+        "name": "Brian Boyle"
+    },
+    "6015": {
+        "yahoo_id": "6015",
+        "nhl_id": "8477456",
+        "name": "J.T. Compher"
+    },
+    "4306": {
+        "yahoo_id": "4306",
+        "nhl_id": "8473473",
+        "name": "Milan Lucic"
+    },
+    "6484": {
+        "yahoo_id": "6484",
+        "nhl_id": "8478046",
+        "name": "Danton Heinen"
+    },
+    "6004": {
+        "yahoo_id": "6004",
+        "nhl_id": "8477446",
+        "name": "Michael McCarron"
+    },
+    "8119": {
+        "yahoo_id": "8119",
+        "nhl_id": "8481186",
+        "name": "Logan O'Connor"
+    },
+    "8300": {
+        "yahoo_id": "8300",
+        "nhl_id": "8481600",
+        "name": "Tobias Bjornfot"
+    },
+    "5739": {
+        "yahoo_id": "5739",
+        "nhl_id": "8476925",
+        "name": "Colton Sissons"
+    },
+    "6037": {
+        "yahoo_id": "6037",
+        "nhl_id": "8477478",
+        "name": "William Carrier"
+    },
+    "5077": {
+        "yahoo_id": "5077",
+        "nhl_id": "8475825",
+        "name": "Jani Hakanpaa"
+    },
+    "8262": {
+        "yahoo_id": "8262",
+        "nhl_id": "8481624",
+        "name": "Ilya Mikheyev"
+    },
+    "7944": {
+        "yahoo_id": "7944",
+        "nhl_id": "8480796",
+        "name": "Martin Fehervary"
+    },
+    "6879": {
+        "yahoo_id": "6879",
+        "nhl_id": "8478866",
+        "name": "Dominik Simon"
+    },
+    "8650": {
+        "yahoo_id": "8650",
+        "nhl_id": "8482149",
+        "name": "Cole Perfetti"
+    },
+    "7950": {
+        "yahoo_id": "7950",
+        "nhl_id": "8480434",
+        "name": "Sean Durzi"
+    },
+    "6019": {
+        "yahoo_id": "6019",
+        "nhl_id": "8477460",
+        "name": "Laurent Dauphin"
+    },
+    "7529": {
+        "yahoo_id": "7529",
+        "nhl_id": "8479984",
+        "name": "Cal Foote"
+    },
+    "6573": {
+        "yahoo_id": "6573",
+        "nhl_id": "8478133",
+        "name": "Jake Evans"
+    },
+    "5993": {
+        "yahoo_id": "5993",
+        "nhl_id": "8477505",
+        "name": "Alex Wennberg"
+    },
+    "3652": {
+        "yahoo_id": "3652",
+        "nhl_id": "8471228",
+        "name": "Alexander Radulov"
+    },
+    "6343": {
+        "yahoo_id": "6343",
+        "nhl_id": "8477846",
+        "name": "Ryan Carpenter"
+    },
+    "5365": {
+        "yahoo_id": "5365",
+        "nhl_id": "8476457",
+        "name": "Adam Larsson"
+    },
+    "4975": {
+        "yahoo_id": "4975",
+        "nhl_id": "8475762",
+        "name": "Derek Forbort"
+    },
+    "6174": {
+        "yahoo_id": "6174",
+        "nhl_id": "8477335",
+        "name": "Kyle Burroughs"
+    },
+    "7103": {
+        "yahoo_id": "7103",
+        "nhl_id": "8479482",
+        "name": "Michal Kempny"
+    },
+    "7921": {
+        "yahoo_id": "7921",
+        "nhl_id": "8480806",
+        "name": "Isac Lundestrom"
+    },
+    "4953": {
+        "yahoo_id": "4953",
+        "nhl_id": "8475233",
+        "name": "David Savard"
+    },
+    "6834": {
+        "yahoo_id": "6834",
+        "nhl_id": "8478840",
+        "name": "Will Borgen"
+    },
+    "7930": {
+        "yahoo_id": "7930",
+        "nhl_id": "8480807",
+        "name": "Mattias Samuelsson"
+    },
+    "4704": {
+        "yahoo_id": "4704",
+        "nhl_id": "8475149",
+        "name": "Marcus Johansson"
+    },
+    "8290": {
+        "yahoo_id": "8290",
+        "nhl_id": "8481557",
+        "name": "Matt Boldy"
+    },
+    "5435": {
+        "yahoo_id": "5435",
+        "nhl_id": "8476393",
+        "name": "Nick Cousins"
+    },
+    "5117": {
+        "yahoo_id": "5117",
+        "nhl_id": "8475842",
+        "name": "Sam Carrick"
+    },
+    "4263": {
+        "yahoo_id": "4263",
+        "nhl_id": "8474150",
+        "name": "Mikael Backlund"
+    },
+    "7138": {
+        "yahoo_id": "7138",
+        "nhl_id": "8479351",
+        "name": "Sam Steel"
+    },
+    "4888": {
+        "yahoo_id": "4888",
+        "nhl_id": "8474027",
+        "name": "Justin Braun"
+    },
+    "6340": {
+        "yahoo_id": "6340",
+        "nhl_id": "8477845",
+        "name": "Trevor van Riemsdyk"
+    },
+    "7321": {
+        "yahoo_id": "7321",
+        "nhl_id": "8479675",
+        "name": "Trevor Moore"
+    },
+    "8303": {
+        "yahoo_id": "8303",
+        "nhl_id": "8481580",
+        "name": "Connor McMichael"
+    },
+    "1700": {
+        "yahoo_id": "1700",
+        "nhl_id": "8465009",
+        "name": "Zdeno Chara"
+    },
+    "5769": {
+        "yahoo_id": "5769",
+        "nhl_id": "8476906",
+        "name": "Shayne Gostisbehere"
+    },
+    "4694": {
+        "yahoo_id": "4694",
+        "nhl_id": "8475179",
+        "name": "Dmitry Kulikov"
+    },
+    "3789": {
+        "yahoo_id": "3789",
+        "nhl_id": "8471686",
+        "name": "Marc Staal"
+    },
+    "6478": {
+        "yahoo_id": "6478",
+        "nhl_id": "8478040",
+        "name": "Austin Poganski"
+    },
+    "7071": {
+        "yahoo_id": "7071",
+        "nhl_id": "8478211",
+        "name": "Dryden Hunt"
+    },
+    "6748": {
+        "yahoo_id": "6748",
+        "nhl_id": "8478401",
+        "name": "Pavel Zacha"
+    },
+    "7936": {
+        "yahoo_id": "7936",
+        "nhl_id": "8481014",
+        "name": "Alexander Romanov"
+    },
+    "3980": {
+        "yahoo_id": "3980",
+        "nhl_id": "8473533",
+        "name": "Jordan Staal"
+    },
+    "5708": {
+        "yahoo_id": "5708",
+        "nhl_id": "8476869",
+        "name": "Brady Skjei"
+    },
+    "5638": {
+        "yahoo_id": "5638",
+        "nhl_id": "8475227",
+        "name": "Chris Wideman"
+    },
+    "5996": {
+        "yahoo_id": "5996",
+        "nhl_id": "8477508",
+        "name": "Curtis Lazar"
+    },
+    "5606": {
+        "yahoo_id": "5606",
+        "nhl_id": "8474818",
+        "name": "Jordie Benn"
+    },
+    "7129": {
+        "yahoo_id": "7129",
+        "nhl_id": "8479328",
+        "name": "Julien Gauthier"
+    },
+    "6896": {
+        "yahoo_id": "6896",
+        "nhl_id": "8478507",
+        "name": "John Marino"
+    },
+    "6838": {
+        "yahoo_id": "6838",
+        "nhl_id": "8478462",
+        "name": "Nicolas Roy"
+    },
+    "6424": {
+        "yahoo_id": "6424",
+        "nhl_id": "8477986",
+        "name": "Brandon Montour"
+    },
+    "6113": {
+        "yahoo_id": "6113",
+        "nhl_id": "8477365",
+        "name": "Connor Clifton"
+    },
+    "5791": {
+        "yahoo_id": "5791",
+        "nhl_id": "8476975",
+        "name": "Cedric Paquette"
+    },
+    "7546": {
+        "yahoo_id": "7546",
+        "nhl_id": "8480011",
+        "name": "Klim Kostin"
+    },
+    "5904": {
+        "yahoo_id": "5904",
+        "nhl_id": "8477073",
+        "name": "Kurtis MacDermid"
+    },
+    "4758": {
+        "yahoo_id": "4758",
+        "nhl_id": "8474145",
+        "name": "Robert Bortuzzo"
+    },
+    "5923": {
+        "yahoo_id": "5923",
+        "nhl_id": "8477210",
+        "name": "Buddy Robinson"
+    },
+    "6021": {
+        "yahoo_id": "6021",
+        "nhl_id": "8477462",
+        "name": "Robert Hagg"
+    },
+    "6008": {
+        "yahoo_id": "6008",
+        "nhl_id": "8477450",
+        "name": "Jason Dickinson"
+    },
+    "5279": {
+        "yahoo_id": "5279",
+        "nhl_id": "8474679",
+        "name": "Gustav Nyquist"
+    },
+    "7209": {
+        "yahoo_id": "7209",
+        "nhl_id": "8479573",
+        "name": "Mikhail Maltsev"
+    },
+    "8641": {
+        "yahoo_id": "8641",
+        "nhl_id": "8482109",
+        "name": "Alexis Lafreniere"
+    },
+    "5714": {
+        "yahoo_id": "5714",
+        "nhl_id": "8474602",
+        "name": "Justin Schultz"
+    },
+    "5783": {
+        "yahoo_id": "5783",
+        "nhl_id": "8476979",
+        "name": "Erik Gustafsson"
+    },
+    "6100": {
+        "yahoo_id": "6100",
+        "nhl_id": "8477353",
+        "name": "Tyler Motte"
+    },
+    "6738": {
+        "yahoo_id": "6738",
+        "nhl_id": "8478567",
+        "name": "Dean Kukan"
+    },
+    "5747": {
+        "yahoo_id": "5747",
+        "nhl_id": "8476921",
+        "name": "Jordan Martinook"
+    },
+    "4558": {
+        "yahoo_id": "4558",
+        "nhl_id": "8474056",
+        "name": "P.K. Subban"
+    },
+    "5542": {
+        "yahoo_id": "5542",
+        "nhl_id": "8476329",
+        "name": "Travis Boyd"
+    },
+    "5928": {
+        "yahoo_id": "5928",
+        "nhl_id": "8475314",
+        "name": "Anders Lee"
+    },
+    "7537": {
+        "yahoo_id": "7537",
+        "nhl_id": "8479977",
+        "name": "Kailer Yamamoto"
+    },
+    "8614": {
+        "yahoo_id": "8614",
+        "nhl_id": "8482245",
+        "name": "Artem Zub"
+    },
+    "6797": {
+        "yahoo_id": "6797",
+        "nhl_id": "8478508",
+        "name": "Yakov Trenin"
+    },
+    "7561": {
+        "yahoo_id": "7561",
+        "nhl_id": "8480071",
+        "name": "Robin Salo"
+    },
+    "6721": {
+        "yahoo_id": "6721",
+        "nhl_id": "8478512",
+        "name": "Austin Czarnik"
+    },
+    "7624": {
+        "yahoo_id": "7624",
+        "nhl_id": "8480008",
+        "name": "Adam Ruzicka"
+    },
+    "4475": {
+        "yahoo_id": "4475",
+        "nhl_id": "8474568",
+        "name": "Luke Schenn"
+    },
+    "6434": {
+        "yahoo_id": "6434",
+        "nhl_id": "8477996",
+        "name": "Juho Lammikko"
+    },
+    "5130": {
+        "yahoo_id": "5130",
+        "nhl_id": "8475855",
+        "name": "Jesper Fast"
+    },
+    "6381": {
+        "yahoo_id": "6381",
+        "nhl_id": "8477946",
+        "name": "Dylan Larkin"
+    },
+    "8646": {
+        "yahoo_id": "8646",
+        "nhl_id": "8482142",
+        "name": "Jamie Drysdale"
+    },
+    "6754": {
+        "yahoo_id": "6754",
+        "nhl_id": "8478495",
+        "name": "Denis Gurianov"
+    },
+    "8658": {
+        "yahoo_id": "8658",
+        "nhl_id": "8482110",
+        "name": "Dawson Mercer"
+    },
+    "4485": {
+        "yahoo_id": "4485",
+        "nhl_id": "8474574",
+        "name": "Tyler Myers"
+    },
+    "8607": {
+        "yahoo_id": "8607",
+        "nhl_id": "8482222",
+        "name": "Alexander Barabanov"
+    },
+    "6774": {
+        "yahoo_id": "6774",
+        "nhl_id": "8478432",
+        "name": "Christian Fischer"
+    },
+    "7151": {
+        "yahoo_id": "7151",
+        "nhl_id": "8479511",
+        "name": "Janne Kuokkanen"
+    },
+    "5736": {
+        "yahoo_id": "5736",
+        "nhl_id": "8476934",
+        "name": "Brock McGinn"
+    },
+    "6789": {
+        "yahoo_id": "6789",
+        "nhl_id": "8478424",
+        "name": "Jansen Harkins"
+    },
+    "6425": {
+        "yahoo_id": "6425",
+        "nhl_id": "8477987",
+        "name": "Ryan Donato"
+    },
+    "7066": {
+        "yahoo_id": "7066",
+        "nhl_id": "8478975",
+        "name": "Mason Marchment"
+    },
+    "6330": {
+        "yahoo_id": "6330",
+        "nhl_id": "8476826",
+        "name": "Yanni Gourde"
+    },
+    "4386": {
+        "yahoo_id": "4386",
+        "nhl_id": "8474207",
+        "name": "Nick Holden"
+    },
+    "6013": {
+        "yahoo_id": "6013",
+        "nhl_id": "8477454",
+        "name": "Adam Erne"
+    },
+    "6480": {
+        "yahoo_id": "6480",
+        "nhl_id": "8478042",
+        "name": "Viktor Arvidsson"
+    },
+    "6132": {
+        "yahoo_id": "6132",
+        "nhl_id": "8477384",
+        "name": "Josh Brown"
+    },
+    "6811": {
+        "yahoo_id": "6811",
+        "nhl_id": "8478434",
+        "name": "Keegan Kolesar"
+    },
+    "6387": {
+        "yahoo_id": "6387",
+        "nhl_id": "8477952",
+        "name": "Robby Fabbri"
+    },
+    "4988": {
+        "yahoo_id": "4988",
+        "nhl_id": "8475745",
+        "name": "Charlie Coyle"
+    },
+    "6378": {
+        "yahoo_id": "6378",
+        "nhl_id": "8477943",
+        "name": "Brendan Perlini"
+    },
+    "5029": {
+        "yahoo_id": "5029",
+        "nhl_id": "8475728",
+        "name": "Johan Larsson"
+    },
+    "3365": {
+        "yahoo_id": "3365",
+        "nhl_id": "8470621",
+        "name": "Corey Perry"
+    },
+    "5559": {
+        "yahoo_id": "5559",
+        "nhl_id": "8476278",
+        "name": "Colin Blackwell"
+    },
+    "6395": {
+        "yahoo_id": "6395",
+        "nhl_id": "8477960",
+        "name": "Adrian Kempe"
+    },
+    "3266": {
+        "yahoo_id": "3266",
+        "nhl_id": "8470281",
+        "name": "Duncan Keith"
+    },
+    "4266": {
+        "yahoo_id": "4266",
+        "nhl_id": "8474090",
+        "name": "Brendan Smith"
+    },
+    "7264": {
+        "yahoo_id": "7264",
+        "nhl_id": "8479542",
+        "name": "Brandon Hagel"
+    },
+    "4981": {
+        "yahoo_id": "4981",
+        "nhl_id": "8475772",
+        "name": "Riley Sheahan"
+    },
+    "6514": {
+        "yahoo_id": "6514",
+        "nhl_id": "8478075",
+        "name": "Anders Bjork"
+    },
+    "7474": {
+        "yahoo_id": "7474",
+        "nhl_id": "8479945",
+        "name": "Gavin Bayreuther"
+    },
+    "4633": {
+        "yahoo_id": "4633",
+        "nhl_id": "8474618",
+        "name": "Marco Scandella"
+    },
+    "5741": {
+        "yahoo_id": "5741",
+        "nhl_id": "8476927",
+        "name": "Teddy Blueger"
+    },
+    "7135": {
+        "yahoo_id": "7135",
+        "nhl_id": "8479353",
+        "name": "Brett Howden"
+    },
+    "7280": {
+        "yahoo_id": "7280",
+        "nhl_id": "8479553",
+        "name": "Maxim Mamin"
+    },
+    "4502": {
+        "yahoo_id": "4502",
+        "nhl_id": "8474589",
+        "name": "Tyler Ennis"
+    },
+    "3990": {
+        "yahoo_id": "3990",
+        "nhl_id": "8473453",
+        "name": "Trevor Lewis"
+    },
+    "5251": {
+        "yahoo_id": "5251",
+        "nhl_id": "8475455",
+        "name": "Brenden Dillon"
+    },
+    "6080": {
+        "yahoo_id": "6080",
+        "nhl_id": "8477426",
+        "name": "Nick Paul"
+    },
+    "6506": {
+        "yahoo_id": "6506",
+        "nhl_id": "8478067",
+        "name": "Oskar Lindblom"
+    },
+    "5343": {
+        "yahoo_id": "5343",
+        "nhl_id": "8475164",
+        "name": "Jakob Silfverberg"
+    },
+    "5227": {
+        "yahoo_id": "5227",
+        "nhl_id": "8475188",
+        "name": "Brayden McNabb"
+    },
+    "5263": {
+        "yahoo_id": "5263",
+        "nhl_id": "8475279",
+        "name": "Ben Chiarot"
+    },
+    "7115": {
+        "yahoo_id": "7115",
+        "nhl_id": "8479343",
+        "name": "Clayton Keller"
+    },
+    "5702": {
+        "yahoo_id": "5702",
+        "nhl_id": "8476874",
+        "name": "Olli Maatta"
+    },
+    "7539": {
+        "yahoo_id": "7539",
+        "nhl_id": "8480005",
+        "name": "Kristian Vesalainen"
+    },
+    "5950": {
+        "yahoo_id": "5950",
+        "nhl_id": "8477244",
+        "name": "Chad Ruhwedel"
+    },
+    "7792": {
+        "yahoo_id": "7792",
+        "nhl_id": "8479933",
+        "name": "Gerry Mayhew"
+    },
+    "7140": {
+        "yahoo_id": "7140",
+        "nhl_id": "8479347",
+        "name": "Tyler Benson"
+    },
+    "7918": {
+        "yahoo_id": "7918",
+        "nhl_id": "8480845",
+        "name": "Rasmus Kupari"
+    },
+    "4241": {
+        "yahoo_id": "4241",
+        "nhl_id": "8474037",
+        "name": "James van Riemsdyk"
+    },
+    "5378": {
+        "yahoo_id": "5378",
+        "nhl_id": "8476470",
+        "name": "Nathan Beaulieu"
+    },
+    "8318": {
+        "yahoo_id": "8318",
+        "nhl_id": "8481535",
+        "name": "Nils Hoglander"
+    },
+    "4753": {
+        "yahoo_id": "4753",
+        "nhl_id": "8474149",
+        "name": "Evgenii Dadonov"
+    },
+    "6549": {
+        "yahoo_id": "6549",
+        "nhl_id": "8478109",
+        "name": "Victor Olofsson"
+    },
+    "6741": {
+        "yahoo_id": "6741",
+        "nhl_id": "8478585",
+        "name": "Derek Ryan"
+    },
+    "6891": {
+        "yahoo_id": "6891",
+        "nhl_id": "8478874",
+        "name": "Adam Gaudette"
+    },
+    "3777": {
+        "yahoo_id": "3777",
+        "nhl_id": "8471677",
+        "name": "Jack Johnson"
+    },
+    "7152": {
+        "yahoo_id": "7152",
+        "nhl_id": "8479383",
+        "name": "Boris Katchouk"
+    },
+    "5757": {
+        "yahoo_id": "5757",
+        "nhl_id": "8476918",
+        "name": "Jimmy Vesey"
+    },
+    "6799": {
+        "yahoo_id": "6799",
+        "nhl_id": "8478399",
+        "name": "Jonas Siegenthaler"
+    },
+    "6936": {
+        "yahoo_id": "6936",
+        "nhl_id": "8478911",
+        "name": "Matt Roy"
+    },
+    "8292": {
+        "yahoo_id": "8292",
+        "nhl_id": "8481546",
+        "name": "Cam York"
+    },
+    "3351": {
+        "yahoo_id": "3351",
+        "nhl_id": "8470606",
+        "name": "Dustin Brown"
+    },
+    "7141": {
+        "yahoo_id": "7141",
+        "nhl_id": "8479335",
+        "name": "Rasmus Asplund"
+    },
+    "5922": {
+        "yahoo_id": "5922",
+        "nhl_id": "8477205",
+        "name": "Andrej Sustr"
+    },
+    "6779": {
+        "yahoo_id": "6779",
+        "nhl_id": "8478443",
+        "name": "Brandon Carlo"
+    },
+    "6373": {
+        "yahoo_id": "6373",
+        "nhl_id": "8477938",
+        "name": "Haydn Fleury"
+    },
+    "7193": {
+        "yahoo_id": "7193",
+        "nhl_id": "8479372",
+        "name": "Josh Mahura"
+    },
+    "7159": {
+        "yahoo_id": "7159",
+        "nhl_id": "8479348",
+        "name": "Kale Clague"
+    },
+    "7499": {
+        "yahoo_id": "7499",
+        "nhl_id": "8480144",
+        "name": "David Kampf"
+    },
+    "6798": {
+        "yahoo_id": "6798",
+        "nhl_id": "8478407",
+        "name": "Vince Dunn"
+    },
+    "7126": {
+        "yahoo_id": "7126",
+        "nhl_id": "8479378",
+        "name": "Logan Stanley"
+    },
+    "7154": {
+        "yahoo_id": "7154",
+        "nhl_id": "8479379",
+        "name": "Givani Smith"
+    },
+    "7374": {
+        "yahoo_id": "7374",
+        "nhl_id": "8479705",
+        "name": "Jeffrey Viel"
+    },
+    "5695": {
+        "yahoo_id": "5695",
+        "nhl_id": "8476879",
+        "name": "Cody Ceci"
+    },
+    "6805": {
+        "yahoo_id": "6805",
+        "nhl_id": "8478476",
+        "name": "Kyle Capobianco"
+    },
+    "6802": {
+        "yahoo_id": "6802",
+        "nhl_id": "8478430",
+        "name": "Oliver Kylington"
+    },
+    "4352": {
+        "yahoo_id": "4352",
+        "nhl_id": "8474034",
+        "name": "Pat Maroon"
+    },
+    "7889": {
+        "yahoo_id": "7889",
+        "nhl_id": "8480950",
+        "name": "Ilya Lyubushkin"
+    },
+    "7565": {
+        "yahoo_id": "7565",
+        "nhl_id": "8480031",
+        "name": "Max Comtois"
+    },
+    "5381": {
+        "yahoo_id": "5381",
+        "nhl_id": "8476473",
+        "name": "Connor Murphy"
+    },
+    "5462": {
+        "yahoo_id": "5462",
+        "nhl_id": "8476419",
+        "name": "Jean-Gabriel Pageau"
+    },
+    "5976": {
+        "yahoo_id": "5976",
+        "nhl_id": "8476822",
+        "name": "Luke Glendening"
+    },
+    "7168": {
+        "yahoo_id": "7168",
+        "nhl_id": "8479580",
+        "name": "Dylan Gambrell"
+    },
+    "3640": {
+        "yahoo_id": "3640",
+        "nhl_id": "8471217",
+        "name": "Andrew Ladd"
+    },
+    "4023": {
+        "yahoo_id": "4023",
+        "nhl_id": "8471669",
+        "name": "Paul Stastny"
+    },
+    "7582": {
+        "yahoo_id": "7582",
+        "nhl_id": "8479987",
+        "name": "Morgan Geekie"
+    },
+    "7220": {
+        "yahoo_id": "7220",
+        "nhl_id": "8479388",
+        "name": "Riley Stillman"
+    },
+    "6707": {
+        "yahoo_id": "6707",
+        "nhl_id": "8478366",
+        "name": "Frank Vatrano"
+    },
+    "4260": {
+        "yahoo_id": "4260",
+        "nhl_id": "8474062",
+        "name": "Riley Nash"
+    },
+    "5464": {
+        "yahoo_id": "5464",
+        "nhl_id": "8476422",
+        "name": "Mike Reilly"
+    },
+    "6103": {
+        "yahoo_id": "6103",
+        "nhl_id": "8477355",
+        "name": "Will Butcher"
+    },
+    "6655": {
+        "yahoo_id": "6655",
+        "nhl_id": "8477919",
+        "name": "Frederick Gaudreau"
+    },
+    "7560": {
+        "yahoo_id": "7560",
+        "nhl_id": "8480074",
+        "name": "Alexandre Texier"
+    },
+    "6928": {
+        "yahoo_id": "6928",
+        "nhl_id": "8478904",
+        "name": "Steven Lorentz"
+    },
+    "7166": {
+        "yahoo_id": "7166",
+        "nhl_id": "8479390",
+        "name": "Taylor Raddysh"
+    },
+    "4599": {
+        "yahoo_id": "4599",
+        "nhl_id": "8474098",
+        "name": "Colton Sceviour"
+    },
+    "4817": {
+        "yahoo_id": "4817",
+        "nhl_id": "8475236",
+        "name": "Cody Eakin"
+    },
+    "3951": {
+        "yahoo_id": "3951",
+        "nhl_id": "8471729",
+        "name": "Kris Russell"
+    },
+    "7164": {
+        "yahoo_id": "7164",
+        "nhl_id": "8479346",
+        "name": "Dillon Dube"
+    },
+    "5744": {
+        "yahoo_id": "5744",
+        "nhl_id": "8476919",
+        "name": "Chris Tierney"
+    },
+    "8197": {
+        "yahoo_id": "8197",
+        "nhl_id": "8481161",
+        "name": "Jake Christiansen"
+    },
+    "5750": {
+        "yahoo_id": "5750",
+        "nhl_id": "8476913",
+        "name": "Devin Shore"
+    },
+    "5693": {
+        "yahoo_id": "5693",
+        "nhl_id": "8476889",
+        "name": "Radek Faksa"
+    },
+    "7829": {
+        "yahoo_id": "7829",
+        "nhl_id": "8480459",
+        "name": "Pius Suter"
+    },
+    "5899": {
+        "yahoo_id": "5899",
+        "nhl_id": "8477034",
+        "name": "Jaycob Megna"
+    },
+    "8311": {
+        "yahoo_id": "8311",
+        "nhl_id": "8481560",
+        "name": "Arthur Kaliyev"
+    },
+    "6366": {
+        "yahoo_id": "6366",
+        "nhl_id": "8477931",
+        "name": "Tomas Nosek"
+    },
+    "6350": {
+        "yahoo_id": "6350",
+        "nhl_id": "8475343",
+        "name": "Nic Dowd"
+    },
+    "4983": {
+        "yahoo_id": "4983",
+        "nhl_id": "8475796",
+        "name": "Mark Pysyk"
+    },
+    "3988": {
+        "yahoo_id": "3988",
+        "nhl_id": "8473449",
+        "name": "Kyle Okposo"
+    },
+    "7517": {
+        "yahoo_id": "7517",
+        "nhl_id": "8479974",
+        "name": "Nolan Patrick"
+    },
+    "5412": {
+        "yahoo_id": "5412",
+        "nhl_id": "8476439",
+        "name": "Brett Ritchie"
+    },
+    "5733": {
+        "yahoo_id": "5733",
+        "nhl_id": "8476931",
+        "name": "Jake McCabe"
+    },
+    "5491": {
+        "yahoo_id": "5491",
+        "nhl_id": "8476368",
+        "name": "Fredrik Claesson"
+    },
+    "5690": {
+        "yahoo_id": "5690",
+        "nhl_id": "8476886",
+        "name": "Slater Koekkoek"
+    },
+    "6107": {
+        "yahoo_id": "6107",
+        "nhl_id": "8477359",
+        "name": "Tucker Poolman"
+    },
+    "8281": {
+        "yahoo_id": "8281",
+        "nhl_id": "8481523",
+        "name": "Kirby Dach"
+    },
+    "7557": {
+        "yahoo_id": "7557",
+        "nhl_id": "8480185",
+        "name": "Eetu Luostarinen"
+    },
+    "7689": {
+        "yahoo_id": "7689",
+        "nhl_id": "8480289",
+        "name": "Morgan Barron"
+    },
+    "4881": {
+        "yahoo_id": "4881",
+        "nhl_id": "8475625",
+        "name": "Matt Irwin"
+    },
+    "7142": {
+        "yahoo_id": "7142",
+        "nhl_id": "8479369",
+        "name": "Andrew Peeke"
+    },
+    "6383": {
+        "yahoo_id": "6383",
+        "nhl_id": "8477948",
+        "name": "Travis Sanheim"
+    },
+    "7928": {
+        "yahoo_id": "7928",
+        "nhl_id": "8480813",
+        "name": "Joe Veleno"
+    },
+    "5932": {
+        "yahoo_id": "5932",
+        "nhl_id": "8477220",
+        "name": "Nate Schmidt"
+    },
+    "7530": {
+        "yahoo_id": "7530",
+        "nhl_id": "8480073",
+        "name": "Erik Brannstrom"
+    },
+    "7217": {
+        "yahoo_id": "7217",
+        "nhl_id": "8479523",
+        "name": "Lucas Carlsson"
+    },
+    "7859": {
+        "yahoo_id": "7859",
+        "nhl_id": "8480762",
+        "name": "Eric Robinson"
+    },
+    "8017": {
+        "yahoo_id": "8017",
+        "nhl_id": "8480798",
+        "name": "Philipp Kurashev"
+    },
+    "6046": {
+        "yahoo_id": "6046",
+        "nhl_id": "8477488",
+        "name": "Brett Pesce"
+    },
+    "8334": {
+        "yahoo_id": "8334",
+        "nhl_id": "8481517",
+        "name": "Brett Leason"
+    },
+    "7127": {
+        "yahoo_id": "7127",
+        "nhl_id": "8479356",
+        "name": "Kieffer Bellows"
+    },
+    "7401": {
+        "yahoo_id": "7401",
+        "nhl_id": "8479639",
+        "name": "Dylan Coghlan"
+    },
+    "4328": {
+        "yahoo_id": "4328",
+        "nhl_id": "8474190",
+        "name": "Wayne Simmonds"
+    },
+    "4686": {
+        "yahoo_id": "4686",
+        "nhl_id": "8475171",
+        "name": "Oliver Ekman-Larsson"
+    },
+    "5795": {
+        "yahoo_id": "5795",
+        "nhl_id": "8476967",
+        "name": "Brett Kulak"
+    },
+    "5966": {
+        "yahoo_id": "5966",
+        "nhl_id": "8477290",
+        "name": "Michael Raffl"
+    },
+    "6881": {
+        "yahoo_id": "6881",
+        "nhl_id": "8478868",
+        "name": "Christian Jaros"
+    },
+    "5777": {
+        "yahoo_id": "5777",
+        "nhl_id": "8476892",
+        "name": "Colton Parayko"
+    },
+    "5991": {
+        "yahoo_id": "5991",
+        "nhl_id": "8477503",
+        "name": "Max Domi"
+    },
+    "6386": {
+        "yahoo_id": "6386",
+        "nhl_id": "8477951",
+        "name": "Nick Schmaltz"
+    },
+    "4174": {
+        "yahoo_id": "4174",
+        "nhl_id": "8471873",
+        "name": "Anton Stralman"
+    },
+    "6869": {
+        "yahoo_id": "6869",
+        "nhl_id": "8478859",
+        "name": "Niko Mikkola"
+    },
+    "7118": {
+        "yahoo_id": "7118",
+        "nhl_id": "8479370",
+        "name": "Tyson Jost"
+    },
+    "7524": {
+        "yahoo_id": "7524",
+        "nhl_id": "8479992",
+        "name": "Michael Rasmussen"
+    },
+    "7553": {
+        "yahoo_id": "7553",
+        "nhl_id": "8480184",
+        "name": "Gustav Lindstrom"
+    },
+    "4792": {
+        "yahoo_id": "4792",
+        "nhl_id": "8475193",
+        "name": "Tomas Tatar"
+    },
+    "5396": {
+        "yahoo_id": "5396",
+        "nhl_id": "8475225",
+        "name": "Craig Smith"
+    },
+    "5598": {
+        "yahoo_id": "5598",
+        "nhl_id": "8474176",
+        "name": "Carl Hagelin"
+    },
+    "8280": {
+        "yahoo_id": "8280",
+        "nhl_id": "8481554",
+        "name": "Kaapo Kakko"
+    },
+    "6859": {
+        "yahoo_id": "6859",
+        "nhl_id": "8478452",
+        "name": "Caleb Jones"
+    },
+    "7549": {
+        "yahoo_id": "7549",
+        "nhl_id": "8479980",
+        "name": "Nicolas Hague"
+    },
+    "7540": {
+        "yahoo_id": "7540",
+        "nhl_id": "8480068",
+        "name": "Ryan Poehling"
+    },
+    "5496": {
+        "yahoo_id": "5496",
+        "nhl_id": "8476372",
+        "name": "Nick Seeler"
+    },
+    "6032": {
+        "yahoo_id": "6032",
+        "nhl_id": "8477473",
+        "name": "Justin Bailey"
+    },
+    "7473": {
+        "yahoo_id": "7473",
+        "nhl_id": "8479944",
+        "name": "Zach Aston-Reese"
+    },
+    "7536": {
+        "yahoo_id": "7536",
+        "nhl_id": "8480078",
+        "name": "Filip Chytil"
+    },
+    "3704": {
+        "yahoo_id": "3704",
+        "nhl_id": "8470755",
+        "name": "Brad Richardson"
+    },
+    "6407": {
+        "yahoo_id": "6407",
+        "nhl_id": "8477969",
+        "name": "Marcus Pettersson"
+    },
+    "7216": {
+        "yahoo_id": "7216",
+        "nhl_id": "8479382",
+        "name": "Connor Bunnaman"
+    },
+    "7469": {
+        "yahoo_id": "7469",
+        "nhl_id": "8478146",
+        "name": "Matthew Highmore"
+    },
+    "7919": {
+        "yahoo_id": "7919",
+        "nhl_id": "8480847",
+        "name": "Ryan Merkley"
+    },
+    "6965": {
+        "yahoo_id": "6965",
+        "nhl_id": "8479026",
+        "name": "Philippe Myers"
+    },
+    "7121": {
+        "yahoo_id": "7121",
+        "nhl_id": "8479402",
+        "name": "Jake Bean"
+    },
+    "4242": {
+        "yahoo_id": "4242",
+        "nhl_id": "8474068",
+        "name": "Kyle Turris"
+    },
+    "4245": {
+        "yahoo_id": "4245",
+        "nhl_id": "8474040",
+        "name": "Sam Gagner"
+    },
+    "8595": {
+        "yahoo_id": "8595",
+        "nhl_id": "8482062",
+        "name": "Cole Smith"
+    },
+    "8887": {
+        "yahoo_id": "8887",
+        "nhl_id": "8482705",
+        "name": "Cole Sillinger"
+    },
+    "6722": {
+        "yahoo_id": "6722",
+        "nhl_id": "8478528",
+        "name": "Tanner Kero"
+    },
+    "6771": {
+        "yahoo_id": "6771",
+        "nhl_id": "8478506",
+        "name": "Gabriel Carlsson"
+    },
+    "6793": {
+        "yahoo_id": "6793",
+        "nhl_id": "8478425",
+        "name": "Brendan Guhle"
+    },
+    "6901": {
+        "yahoo_id": "6901",
+        "nhl_id": "8478882",
+        "name": "Vladislav Gavrikov"
+    },
+    "7580": {
+        "yahoo_id": "7580",
+        "nhl_id": "8480007",
+        "name": "Jonas Rondbjerg"
+    },
+    "7869": {
+        "yahoo_id": "7869",
+        "nhl_id": "8480901",
+        "name": "Karson Kuhlman"
+    },
+    "8661": {
+        "yahoo_id": "8661",
+        "nhl_id": "8482475",
+        "name": "Yegor Chinakhov"
+    },
+    "7938": {
+        "yahoo_id": "7938",
+        "nhl_id": "8480802",
+        "name": "Ryan McLeod"
+    },
+    "4692": {
+        "yahoo_id": "4692",
+        "nhl_id": "8475177",
+        "name": "Calvin de Haan"
+    },
+    "6159": {
+        "yahoo_id": "6159",
+        "nhl_id": "8477320",
+        "name": "Anton Blidh"
+    },
+    "4498": {
+        "yahoo_id": "4498",
+        "nhl_id": "8474586",
+        "name": "Jordan Eberle"
+    },
+    "5072": {
+        "yahoo_id": "5072",
+        "nhl_id": "8475820",
+        "name": "Joonas Donskoi"
+    },
+    "1600": {
+        "yahoo_id": "1600",
+        "nhl_id": "8466138",
+        "name": "Joe Thornton"
+    },
+    "5979": {
+        "yahoo_id": "5979",
+        "nhl_id": "8476779",
+        "name": "Brad Hunt"
+    },
+    "6221": {
+        "yahoo_id": "6221",
+        "nhl_id": "8475413",
+        "name": "Justin Dowling"
+    },
+    "6761": {
+        "yahoo_id": "6761",
+        "nhl_id": "8478431",
+        "name": "Evgeny Svechnikov"
+    },
+    "6788": {
+        "yahoo_id": "6788",
+        "nhl_id": "8478466",
+        "name": "Daniel Sprong"
+    },
+    "7113": {
+        "yahoo_id": "7113",
+        "nhl_id": "8479355",
+        "name": "Olli Juolevi"
+    },
+    "7119": {
+        "yahoo_id": "7119",
+        "nhl_id": "8479366",
+        "name": "Logan Brown"
+    },
+    "7145": {
+        "yahoo_id": "7145",
+        "nhl_id": "8479333",
+        "name": "Libor Hajek"
+    },
+    "7207": {
+        "yahoo_id": "7207",
+        "nhl_id": "8479376",
+        "name": "Victor Mete"
+    },
+    "7222": {
+        "yahoo_id": "7222",
+        "nhl_id": "8479587",
+        "name": "Rhett Gardner"
+    },
+    "7614": {
+        "yahoo_id": "7614",
+        "nhl_id": "8480196",
+        "name": "Jacob Bryson"
+    },
+    "7909": {
+        "yahoo_id": "7909",
+        "nhl_id": "8480789",
+        "name": "Oliver Wahlstrom"
+    },
+    "6059": {
+        "yahoo_id": "6059",
+        "nhl_id": "8477406",
+        "name": "Mattias Janmark"
+    },
+    "6585": {
+        "yahoo_id": "6585",
+        "nhl_id": "8477839",
+        "name": "Conor Sheary"
+    },
+    "7564": {
+        "yahoo_id": "7564",
+        "nhl_id": "8479983",
+        "name": "Mario Ferraro"
+    },
+    "8034": {
+        "yahoo_id": "8034",
+        "nhl_id": "8480988",
+        "name": "Riley Damiani"
+    },
+    "5544": {
+        "yahoo_id": "5544",
+        "nhl_id": "8476331",
+        "name": "Dylan DeMelo"
+    },
+    "6489": {
+        "yahoo_id": "6489",
+        "nhl_id": "8478051",
+        "name": "Max Willman"
+    },
+    "7558": {
+        "yahoo_id": "7558",
+        "nhl_id": "8480049",
+        "name": "Dylan Samberg"
+    },
+    "3983": {
+        "yahoo_id": "3983",
+        "nhl_id": "8473548",
+        "name": "Phil Kessel"
+    },
+    "8069": {
+        "yahoo_id": "8069",
+        "nhl_id": "8481068",
+        "name": "Yegor Sharangovich"
+    },
+    "7160": {
+        "yahoo_id": "7160",
+        "nhl_id": "8479322",
+        "name": "Wade Allison"
+    },
+    "7904": {
+        "yahoo_id": "7904",
+        "nhl_id": "8480821",
+        "name": "Filip Zadina"
+    },
+    "6776": {
+        "yahoo_id": "6776",
+        "nhl_id": "8478408",
+        "name": "Travis Dermott"
+    },
+    "8659": {
+        "yahoo_id": "8659",
+        "nhl_id": "8482073",
+        "name": "Braden Schneider"
+    },
+    "2900": {
+        "yahoo_id": "2900",
+        "nhl_id": "8469455",
+        "name": "Jason Spezza"
+    },
+    "8857": {
+        "yahoo_id": "8857",
+        "nhl_id": "8482624",
+        "name": "Daniil Miromanov"
+    },
+    "4765": {
+        "yahoo_id": "4765",
+        "nhl_id": "8475160",
+        "name": "Kyle Clifford"
+    },
+    "5388": {
+        "yahoo_id": "5388",
+        "nhl_id": "8476480",
+        "name": "Vladislav Namestnikov"
+    },
+    "7999": {
+        "yahoo_id": "7999",
+        "nhl_id": "8481061",
+        "name": "Jasper Weatherby"
+    },
+    "4920": {
+        "yahoo_id": "4920",
+        "nhl_id": "8473415",
+        "name": "Alex Biega"
+    },
+    "5927": {
+        "yahoo_id": "5927",
+        "nhl_id": "8477215",
+        "name": "Danny DeKeyser"
+    },
+    "6767": {
+        "yahoo_id": "6767",
+        "nhl_id": "8478458",
+        "name": "Jack Roslovic"
+    },
+    "7532": {
+        "yahoo_id": "7532",
+        "nhl_id": "8480043",
+        "name": "Timothy Liljegren"
+    },
+    "6481": {
+        "yahoo_id": "6481",
+        "nhl_id": "8478043",
+        "name": "Sam Lafferty"
+    },
+    "7508": {
+        "yahoo_id": "7508",
+        "nhl_id": "8480160",
+        "name": "Radim Simek"
+    },
+    "7542": {
+        "yahoo_id": "7542",
+        "nhl_id": "8480028",
+        "name": "Morgan Frost"
+    },
+    "4696": {
+        "yahoo_id": "4696",
+        "nhl_id": "8475181",
+        "name": "Nick Leddy"
+    },
+    "5837": {
+        "yahoo_id": "5837",
+        "nhl_id": "8477018",
+        "name": "Ben Hutton"
+    },
+    "6436": {
+        "yahoo_id": "6436",
+        "nhl_id": "8477998",
+        "name": "Warren Foegele"
+    },
+    "7632": {
+        "yahoo_id": "7632",
+        "nhl_id": "8480205",
+        "name": "Emil Bemstrom"
+    },
+    "3829": {
+        "yahoo_id": "3829",
+        "nhl_id": "8471709",
+        "name": "Marc-Edouard Vlasic"
+    },
+    "3871": {
+        "yahoo_id": "3871",
+        "nhl_id": "8472382",
+        "name": "Andy Greene"
+    },
+    "5014": {
+        "yahoo_id": "5014",
+        "nhl_id": "8475747",
+        "name": "Patrik Nemeth"
+    },
+    "7218": {
+        "yahoo_id": "7218",
+        "nhl_id": "8479393",
+        "name": "Noah Gregor"
+    },
+    "3981": {
+        "yahoo_id": "3981",
+        "nhl_id": "8473604",
+        "name": "Jonathan Toews"
+    },
+    "6839": {
+        "yahoo_id": "6839",
+        "nhl_id": "8478841",
+        "name": "Colton White"
+    },
+    "7128": {
+        "yahoo_id": "7128",
+        "nhl_id": "8479395",
+        "name": "Dennis Cholowski"
+    },
+    "7915": {
+        "yahoo_id": "7915",
+        "nhl_id": "8480883",
+        "name": "Ty Smith"
+    },
+    "7927": {
+        "yahoo_id": "7927",
+        "nhl_id": "8480873",
+        "name": "Rasmus Sandin"
+    },
+    "6169": {
+        "yahoo_id": "6169",
+        "nhl_id": "8477330",
+        "name": "Dominik Kubalik"
+    },
+    "8935": {
+        "yahoo_id": "8935",
+        "nhl_id": "8482655",
+        "name": "Janis Moser"
+    },
+    "7150": {
+        "yahoo_id": "7150",
+        "nhl_id": "8479373",
+        "name": "Jonathan Dahlen"
+    },
+    "4838": {
+        "yahoo_id": "4838",
+        "nhl_id": "8474009",
+        "name": "Nick Bonino"
+    },
+    "3802": {
+        "yahoo_id": "3802",
+        "nhl_id": "8471699",
+        "name": "Andrew Cogliano"
+    },
+    "5415": {
+        "yahoo_id": "5415",
+        "nhl_id": "8476442",
+        "name": "Matt Nieto"
+    },
+    "8229": {
+        "yahoo_id": "8229",
+        "nhl_id": "8481147",
+        "name": "Reese Johnson"
+    },
+    "8297": {
+        "yahoo_id": "8297",
+        "nhl_id": "8481575",
+        "name": "Lassi Thomson"
+    },
+    "8298": {
+        "yahoo_id": "8298",
+        "nhl_id": "8481572",
+        "name": "Ville Heinola"
+    },
+    "8310": {
+        "yahoo_id": "8310",
+        "nhl_id": "8481596",
+        "name": "Shane Pinto"
+    },
+    "8374": {
+        "yahoo_id": "8374",
+        "nhl_id": "8481740",
+        "name": "Tyce Thompson"
+    },
+    "4380": {
+        "yahoo_id": "4380",
+        "nhl_id": "8474291",
+        "name": "Jay Beagle"
+    },
+    "4383": {
+        "yahoo_id": "4383",
+        "nhl_id": "8473618",
+        "name": "Mathieu Perreault"
+    },
+    "4424": {
+        "yahoo_id": "4424",
+        "nhl_id": "8474166",
+        "name": "Alec Martinez"
+    },
+    "8532": {
+        "yahoo_id": "8532",
+        "nhl_id": "8481461",
+        "name": "Corey Schueneman"
+    },
+    "4473": {
+        "yahoo_id": "4473",
+        "nhl_id": "8474567",
+        "name": "Zach Bogosian"
+    },
+    "8590": {
+        "yahoo_id": "8590",
+        "nhl_id": "8482055",
+        "name": "Drew O'Connor"
+    },
+    "8609": {
+        "yahoo_id": "8609",
+        "nhl_id": "8482244",
+        "name": "Johannes Kinnvall"
+    },
+    "8612": {
+        "yahoo_id": "8612",
+        "nhl_id": "8482243",
+        "name": "Linus Sandin"
+    },
+    "8613": {
+        "yahoo_id": "8613",
+        "nhl_id": "8482241",
+        "name": "Radim Zohorna"
+    },
+    "4568": {
+        "yahoo_id": "4568",
+        "nhl_id": "8474628",
+        "name": "Michael Stone"
+    },
+    "8665": {
+        "yahoo_id": "8665",
+        "nhl_id": "8482111",
+        "name": "Justin Barron"
+    },
+    "4677": {
+        "yahoo_id": "4677",
+        "nhl_id": "8474038",
+        "name": "Paul Byron"
+    },
+    "4701": {
+        "yahoo_id": "4701",
+        "nhl_id": "8475186",
+        "name": "John Moore"
+    },
+    "4706": {
+        "yahoo_id": "4706",
+        "nhl_id": "8475151",
+        "name": "Kyle Palmieri"
+    },
+    "4771": {
+        "yahoo_id": "4771",
+        "nhl_id": "8474612",
+        "name": "Travis Hamonic"
+    },
+    "8868": {
+        "yahoo_id": "8868",
+        "nhl_id": "8479941",
+        "name": "Justin Danforth"
+    },
+    "4892": {
+        "yahoo_id": "4892",
+        "nhl_id": "8475246",
+        "name": "Kevin Connauton"
+    },
+    "4966": {
+        "yahoo_id": "4966",
+        "nhl_id": "8475792",
+        "name": "Brett Connolly"
+    },
+    "4974": {
+        "yahoo_id": "4974",
+        "nhl_id": "8475768",
+        "name": "Jaden Schwartz"
+    },
+    "4979": {
+        "yahoo_id": "4979",
+        "nhl_id": "8475760",
+        "name": "Nick Bjugstad"
+    },
+    "4984": {
+        "yahoo_id": "4984",
+        "nhl_id": "8475763",
+        "name": "Kevin Hayes"
+    },
+    "5004": {
+        "yahoo_id": "5004",
+        "nhl_id": "8475752",
+        "name": "Tyler Pitlick"
+    },
+    "5027": {
+        "yahoo_id": "5027",
+        "nhl_id": "8475718",
+        "name": "Justin Holl"
+    },
+    "5032": {
+        "yahoo_id": "5032",
+        "nhl_id": "8475722",
+        "name": "Jason Zucker"
+    },
+    "5120": {
+        "yahoo_id": "5120",
+        "nhl_id": "8475848",
+        "name": "Brendan Gallagher"
+    },
+    "5203": {
+        "yahoo_id": "5203",
+        "nhl_id": "8475958",
+        "name": "Michael Sgarbossa"
+    },
+    "5238": {
+        "yahoo_id": "5238",
+        "nhl_id": "8474641",
+        "name": "Adam Henrique"
+    },
+    "5256": {
+        "yahoo_id": "5256",
+        "nhl_id": "8474870",
+        "name": "Tyler Johnson"
+    },
+    "5371": {
+        "yahoo_id": "5371",
+        "nhl_id": "8476463",
+        "name": "Jonas Brodin"
+    },
+    "5375": {
+        "yahoo_id": "5375",
+        "nhl_id": "8476467",
+        "name": "Jamie Oleksiak"
+    },
+    "5377": {
+        "yahoo_id": "5377",
+        "nhl_id": "8476469",
+        "name": "Joel Armia"
+    }
+}

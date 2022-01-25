@@ -25,15 +25,15 @@ def get_ids():
     players = remove_duplicate_ids(players)
     return [_ for _ in players if 'G' not in _['positions']]
 
-def get_ids_2():
+def get_ids_2(depth=2):
     my_team = _get_my_team()
-    fas = _get_fa()
+    fas = _get_fa(depth)
     return remove_duplicate_ids(my_team + fas)
 
 
-def _get_fa():
+def _get_fa(depth=2):
     r = []
-    for _ in range(0, 25*2, 25):
+    for _ in range(0, 25*depth, 25):
         data = requests.get(f"{deta_url}/players?start_num={_}").json()
         for p in data:
             if "G" in p['eligible_positions']['position']: continue
