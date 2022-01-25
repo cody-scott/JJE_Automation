@@ -1,5 +1,5 @@
 from audioop import add
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import Depends, FastAPI
 from starlette.middleware.sessions import SessionMiddleware
 
 from auth.auth import router as auth_router
