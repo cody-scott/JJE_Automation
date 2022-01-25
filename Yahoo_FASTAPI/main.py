@@ -75,8 +75,9 @@ async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="A
     )
     try:
         rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
-        out = player_model.PlayersModel(**rf)
-        return out
+        print(rf)
+        # out = player_model.PlayersModel(**rf)
+        return rf
     except Exception as e:
         return HTTPException(status_code=500, detail=e)
 
