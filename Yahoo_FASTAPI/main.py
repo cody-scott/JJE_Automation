@@ -46,20 +46,28 @@ async def yahoo_teams():
     return rf
 
 @app.get('/players', response_model=player_model.PlayersModel)
-async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="AR", start_num: Optional[int]=0):
+async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="AR", start_num: Optional[int]=0, search: Optional[str]=None, count: Optional[int]=None):
     data = {
                 'status': status,
                 "sort_type": sort_type,
                 "sort": sort,
+                "start": start_num,
+                "search": search,
+                "count": count
     }
-    if start_num is not None:
-        data['start'] = start_num
+
+    data = {
+        _: val for _ in data if (val := data[_]) is not None
+    }
+    # if start_num is not None:
+    #     data['start'] = start_num
 
     player_args = urlencode(data)
     player_args = player_args.replace("&", ";")
     url = f"{base_url}/players;{player_args}/stats"
     token = await get_token()
 
+    print(url)
     r = await oauth.yahoo.get(
         url,
         token=token
