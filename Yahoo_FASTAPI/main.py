@@ -1,5 +1,5 @@
 from audioop import add
-from Yahoo_FASTAPI.models.player_model import PlayerModel
+
 from fastapi import Depends, FastAPI, HTTPException
 from starlette.middleware.sessions import SessionMiddleware
 
