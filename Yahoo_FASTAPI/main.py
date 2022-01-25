@@ -1,5 +1,5 @@
 from audioop import add
-from fastapi import Depends, FastAPI
+from fastapi import Depends, FastAPI, HTTPException
 from starlette.middleware.sessions import SessionMiddleware
 
 from auth.auth import router as auth_router
@@ -72,8 +72,12 @@ async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="A
         url,
         token=token
     )
-    rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
-    return rf
+
+    try:
+        rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
+        return rf
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=r.content)
 
 @app.get('/roster', response_model=models.RosterModel)
 async def get_roster(team_id: int, roster_date: Optional[datetime.date]=None):
