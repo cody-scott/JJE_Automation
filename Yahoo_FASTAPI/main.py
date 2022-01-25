@@ -72,11 +72,11 @@ async def yahoo_players(status: str="W", sort_type: str="lastweek", sort: str="A
         url,
         token=token
     )
-    print(r.content)
+    # print(r.content)
     
     rf = xmltodict.parse(r.content)['fantasy_content']['league']['players']['player']
     return rf
-    
+
 
 @app.get('/roster', response_model=models.RosterModel)
 async def get_roster(team_id: int, roster_date: Optional[datetime.date]=None):
