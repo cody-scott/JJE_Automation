@@ -171,24 +171,31 @@ class FantasyModel:
         print('  - branches  : %i' % solver.NumBranches())
         print('  - wall time : %f s' % solver.WallTime())
         print()
+
+        self.apply_placed_positions()
+
         return dict(status=status, solver=solver)
+
+    def apply_placed_positions(self):
+        for player in self.players:
+            pp = player.get_placed_position(self.solved_model)
+            player.placed_position = pp
 
     def results_to_json(self):
         data = []
         for p in self.players:
             dc = asdict(p)
             dc = {_: dc[_] for _ in dc if _ not in ['model_positions', 'allow_positions']}
-            dc['placed_position'] = p.get_placed_position(self.solved_model)
+            # dc['placed_position'] = p.get_placed_position(self.solved_model)
             data.append(dc)
-        
-        return json.dumps(data, indent=4)
+        return data
 
     def print_solved(self, show_unplaced=True, show_stats=True):
         skip_positions = [] if show_unplaced else ["Waivers"]
-        if self.solved_status != cp_model.OPTIMAL:
-            return
+        # if self.solved_status != cp_model.OPTIMAL:
+        #     return
 
-        _solved_model = self.solved_model
+        # _solved_model = self.solved_model
         targets = {
             'Goals': 'goals',
             'Assists': 'assists',
@@ -206,7 +213,7 @@ class FantasyModel:
                     [
                         getattr(_, targets[target]) 
                         for _ in self.players
-                        if _.get_placed_position(_solved_model) not in ['IR', 'Bench', 'Waivers']
+                        if _.placed_position not in ['IR', 'Bench', 'Waivers']
                     ]               
                 )
                 current_sum = sum(
@@ -227,17 +234,17 @@ class FantasyModel:
 
         pos_list = []
         for _ in self.players:
-            pp = _.get_placed_position(_solved_model)
+            pp = _.placed_position
 
             if pp in skip_positions:
                 continue
 
             pr = '' 
-            if _.current_position == 'Waivers':
+            if _.current_position == 'Waivers' and _.placed_position != 'Waivers':
                 pr = "*"                
             elif _.current_position != pp:
                 pr = "-"
-            pos_list.append(f"{pr}{_.name} - {pp}" )
+            pos_list.append(f"{pr}{_.name} - {_.id} - {pp}" )
 
         print("\n".join(
             sorted(
@@ -246,3 +253,8 @@ class FantasyModel:
             )
             )
         )
+
+def load_saved_results(_path):
+    with open(_path, 'r') as f:
+        data = json.load(f)
+    return data

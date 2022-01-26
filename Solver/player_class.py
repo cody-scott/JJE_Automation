@@ -25,6 +25,8 @@ class Player:
     
     model_positions: Dict = field(default_factory=dict) # list of all the position permutations for the player
     allow_positions: Dict = field(default_factory=dict) # dictionary of each position and the model variables for it
+
+    placed_position: Optional[str] = None
     
     def get_placed_position(self, _solved_model: cp_model.CpSolver, exclude_positions: List[str] = None):
         """given a solved model, return the allocated position"""

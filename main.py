@@ -88,19 +88,27 @@ def main():
     players = build_player_classes(data)
 
     model = build_team(players)
-
+    results = model.results_to_json()
     save_to_deta(model.results_to_json())
 
 
 def save_to_deta(result):
     dt = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
+    result = json.dumps(result, indent=4)
+
     deta = Deta(deta_project)
     drive = deta.Drive("yahoo_results")
     drive.put(f'results_{dt}.json', result)
+    p = Path('model_results')
 
-    with open(Path('results')/f"results_{dt}.json", "w") as f:
-        json.dump(result, f, indent=4)
+    if not p.exists():
+        p.mkdir()
+
+    (p/f"results_{dt}.json").write_text(result)
+
+    # with open(p/f"results_{dt}.json", "w") as f:
+    #     json.dump(result, f, indent=4)
 
 
 def build_team(players):
