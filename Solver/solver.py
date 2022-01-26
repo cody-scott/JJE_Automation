@@ -34,11 +34,11 @@ class FantasyModel:
                         # player.allow_positions[position].append(pos_var)
 
                     # elif position == 'Util' and player.util:
-                    if position == 'Util' and player.util:
-                        pos_var = model.NewBoolVar(_lbl)
-                        player.allow_positions[position].append(pos_var)
+                    # if position == 'Util' and player.util:
+                    #     pos_var = model.NewBoolVar(_lbl)
+                    #     player.allow_positions[position].append(pos_var)
 
-                    elif (position in player.positions):
+                    if position in player.positions:
                         pos_var = model.NewBoolVar(_lbl)
                         player.allow_positions[position].append(pos_var)
                         
@@ -67,7 +67,7 @@ class FantasyModel:
         return objective, coef
         
     def build_scaler(self, players, attr):
-        scaler = MinMaxScaler((0, 100))
+        scaler = MinMaxScaler((0, 20))
         scaler.fit([[getattr(_, attr)] for _ in players])
         return scaler
 
@@ -187,6 +187,7 @@ class FantasyModel:
         skip_positions = [] if show_unplaced else ["Waivers"]
         if self.solved_status != cp_model.OPTIMAL:
             return
+
         _solved_model = self.solved_model
         targets = {
             'Goals': 'goals',
@@ -224,25 +225,24 @@ class FantasyModel:
             print()    
 
 
-        # pos_list = []
-        # for _ in self.players:
-        #     pp = _.get_placed_position(_solved_model)
-        #     cpos = "*" if _.current_position == 'Waivers' else ''
-        #     if pp not in skip_positions:
-                
-        #         pos_list.append(f"{_.name} - {pp}" )
+        pos_list = []
+        for _ in self.players:
+            pp = _.get_placed_position(_solved_model)
 
+            if pp in skip_positions:
+                continue
+
+            pr = '' 
+            if _.current_position == 'Waivers':
+                pr = "*"                
+            elif _.current_position != pp:
+                pr = "-"
+            pos_list.append(f"{pr}{_.name} - {pp}" )
 
         print("\n".join(
             sorted(
-                [
-                    f"{'*' if _.current_position == 'Waivers' else ''}{_.name} - {pp}" 
-                    for _ in self.players
-                    if (pp := _.get_placed_position(_solved_model)) not in skip_positions
-                ],
+                pos_list,
                 key=lambda x: {'LW': 0, 'C': 1, 'RW': 2, 'D': 3, 'IR': 4, 'Util': 5, 'Bench': 6}.get(x.split(" - ")[-1], 9)
             )
             )
         )
-
-

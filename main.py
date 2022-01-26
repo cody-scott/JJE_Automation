@@ -1,23 +1,23 @@
+from dataclasses import fields
+from deta import Deta
+from pathlib import Path
+from dotenv import load_dotenv
+
+import pandas as pd
 import requests
 import json
 import os
-from pathlib import Path
 import datetime
-from deta import Deta
-import pandas as pd
 
-# from PerformanceData import process
 from Solver.solver import FantasyModel
 from Solver import player_class
 from PerformanceData.get_performance import performance_df, reduce_frame
 
-from dataclasses import fields
-
-from dotenv import load_dotenv
 load_dotenv()
 
 deta_url = os.environ['DETA_URL']
 deta_project = os.environ['DETA_PROJECT']
+
 
 def get_ids(depth=2):
     print("Collecting Player ids")
@@ -79,16 +79,6 @@ def build_player_classes(player_df):
     return [player_class.Player(**p) for p in data]
 
 
-def combine_data(player_data, data):
-    data = json.loads(data.reset_index().to_json(orient="records"))
-    # player_data = [{'id': _[0], 'name':_[1], 'positions':_[2].split(","), 'team': _[3]} for _ in players]
-    for player in player_data:
-        for _ in data:
-            if _['id'] == player['id']:
-                player.update(_)
-    return [player_class.Player(**p) for p in player_data]
-
-
 def main():
     # players = get_ids()
     # data = performance_df(players)
@@ -99,9 +89,7 @@ def main():
 
     model = build_team(players)
 
-    save_to_deta(
-        model.results_to_json()
-    )
+    save_to_deta(model.results_to_json())
 
 
 def save_to_deta(result):
@@ -114,6 +102,7 @@ def save_to_deta(result):
     with open(Path('results')/f"results_{dt}.json", "w") as f:
         json.dump(result, f, indent=4)
 
+
 def build_team(players):
     solver = FantasyModel()
     players = player_class.join_protected(players, 'protected_players.json')
@@ -122,7 +111,6 @@ def build_team(players):
     solver.print_solved(show_unplaced=False)
     return solver
     
-
 
 if __name__ == "__main__":
     main()

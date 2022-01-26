@@ -64,6 +64,8 @@ def join_protected(data, protected_list):
                 if _["id"]!=p.id:
                     continue
 
-                p.util = _.get('util', False)
+                # p.util = _.get('util', False)
+                if _.get('util') is not None:                    
+                    p.positions.append('Util')
                 p.protected = True
     return data
