@@ -14,7 +14,7 @@ class Player:
     assists: int
     points: int
     plusMinus: int
-    penaltyMinutes: int
+    pim: int
     powerPlayPoints: int
     gameWinningGoals: int
     hits: int

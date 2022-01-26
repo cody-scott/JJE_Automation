@@ -3,7 +3,7 @@ from typing import List, Dict, Tuple, Optional
 from ortools.sat.python import cp_model
 from sklearn.preprocessing import MinMaxScaler
 
-from Solver.player_class import Player
+from Solver.player_class import Player, join_protected
 from dataclasses import asdict
 import json
 import datetime
@@ -29,11 +29,12 @@ class FantasyModel:
                 # for each position, loop the allowed number per-position
                 for i in range(positions[position]):
                     _lbl = f'{player.id} - {player.name} - {position} - {i}'
-                    if position == 'Bench':
-                        pos_var = model.NewBoolVar(_lbl)
-                        player.allow_positions[position].append(pos_var)
+                    # if position == 'Bench':
+                        # pos_var = model.NewBoolVar(_lbl)
+                        # player.allow_positions[position].append(pos_var)
 
-                    elif position == 'Util' and player.util:
+                    # elif position == 'Util' and player.util:
+                    if position == 'Util' and player.util:
                         pos_var = model.NewBoolVar(_lbl)
                         player.allow_positions[position].append(pos_var)
 
@@ -133,12 +134,12 @@ class FantasyModel:
                 ) == p_count)
 
 
-        goal_objective, goal_coef = self.build_objective_by_attr(players, 'g')     
-        assist_objective, assist_coef = self.build_objective_by_attr(players, 'a') 
-        points_objective, points_coef = self.build_objective_by_attr(players, 'p')   
-        pm_objective, pm_coef = self.build_objective_by_attr(players, 'pm')
+        goal_objective, goal_coef = self.build_objective_by_attr(players, 'goals')     
+        assist_objective, assist_coef = self.build_objective_by_attr(players, 'assists') 
+        points_objective, points_coef = self.build_objective_by_attr(players, 'points')   
+        pm_objective, pm_coef = self.build_objective_by_attr(players, 'plusMinus')
         pim_objective, pim_coef = self.build_objective_by_attr(players, 'pim')
-        ppp_objective, ppp_coef = self.build_objective_by_attr(players, 'ppp')
+        ppp_objective, ppp_coef = self.build_objective_by_attr(players, 'powerPlayPoints')
         hits_objective, hits_coef = self.build_objective_by_attr(players, 'hits')
         
         model.Maximize(
@@ -188,13 +189,13 @@ class FantasyModel:
             return
         _solved_model = self.solved_model
         targets = {
-            'Goals': 'g',
-            'Assists': 'a',
-            'Points': 'p',
-            'Plus/Minus': 'pm',
+            'Goals': 'goals',
+            'Assists': 'assists',
+            'Points': 'points',
+            'Plus/Minus': 'plusMinus',
             'PIMs': 'pim',
-            'Powerplay Points': 'ppp',
-            'Game winning goals': 'gwg',
+            'Powerplay Points': 'powerPlayPoints',
+            'Game winning goals': 'gameWinningGoals',
             'Hits': 'hits'
         }
 
@@ -223,11 +224,19 @@ class FantasyModel:
             print()    
 
 
+        # pos_list = []
+        # for _ in self.players:
+        #     pp = _.get_placed_position(_solved_model)
+        #     cpos = "*" if _.current_position == 'Waivers' else ''
+        #     if pp not in skip_positions:
+                
+        #         pos_list.append(f"{_.name} - {pp}" )
+
 
         print("\n".join(
             sorted(
                 [
-                    f"{_.name} - {pp}" 
+                    f"{'*' if _.current_position == 'Waivers' else ''}{_.name} - {pp}" 
                     for _ in self.players
                     if (pp := _.get_placed_position(_solved_model)) not in skip_positions
                 ],
@@ -235,3 +244,5 @@ class FantasyModel:
             )
             )
         )
+
+

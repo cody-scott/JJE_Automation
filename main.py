@@ -4,28 +4,23 @@ import os
 from pathlib import Path
 import datetime
 from deta import Deta
+import pandas as pd
 
 # from PerformanceData import process
 from Solver.solver import FantasyModel
 from Solver import player_class
+from PerformanceData.get_performance import performance_df, reduce_frame
+
+from dataclasses import fields
 
 from dotenv import load_dotenv
 load_dotenv()
 
 deta_url = os.environ['DETA_URL']
+deta_project = os.environ['DETA_PROJECT']
 
-def get_ids():
-    my_team = requests.get(f"{deta_url}/myteam").json()
-    i = 25
-    fas = []
-    for _ in range(0, i*2, i):
-        f = requests.get(f"{deta_url}/players?start={_}")
-        fas += f.json()
-    players = my_team + fas
-    players = remove_duplicate_ids(players)
-    return [_ for _ in players if 'G' not in _['positions']]
-
-def get_ids_2(depth=2):
+def get_ids(depth=2):
+    print("Collecting Player ids")
     my_team = _get_my_team()
     fas = _get_fa(depth)
     return remove_duplicate_ids(my_team + fas)
@@ -41,6 +36,7 @@ def _get_fa(depth=2):
                 id=p['player_id'],
                 name=p['name']['full'],
                 positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']]+["Bench"],
+                current_position="Waivers",
                 team=p['editorial_team_full_name']
             )
             r.append(f)
@@ -56,13 +52,15 @@ def _get_my_team():
             id=p['player_id'],
             name=p['name']['full'],
             positions=[_.replace("+", "") for _ in p['eligible_positions']['position'] if _ not in ['G', 'Util']]+["Bench"],
-            current_position=p['selected_position']['position'],
+            current_position=p['selected_position']['position'].replace("BN", "Bench"),
             team=p['editorial_team_full_name']
         )
         r.append(f)
     return r
 
+
 def remove_duplicate_ids(players):
+    print('removing duplicates')
     out = []
     _ids = []
     for _ in players:
@@ -70,6 +68,16 @@ def remove_duplicate_ids(players):
             _ids.append(_['id'])
             out.append(_) 
     return out
+
+
+def build_player_classes(player_df):
+    print("Building player class")
+    dc_cols = [_.name for _ in fields(player_class.Player)]
+    r_df = reduce_frame(player_df, _days=14)
+    r_df = r_df[[_ for _ in r_df.columns if _ in dc_cols]]
+    data = json.loads(r_df.reset_index().to_json(orient="records"))
+    return [player_class.Player(**p) for p in data]
+
 
 def combine_data(player_data, data):
     data = json.loads(data.reset_index().to_json(orient="records"))
@@ -82,16 +90,24 @@ def combine_data(player_data, data):
 
 
 def main():
-    players = get_ids()
-    data = process.performance_data(players)
-    data.to_csv('player_data.csv')
-    data = combine_data(players, data)
-    build_team(data)
+    # players = get_ids()
+    # data = performance_df(players)
+    # data.to_json('player_data.json', orient='records')
+    
+    data = pd.read_json('player_data.json')
+    players = build_player_classes(data)
+
+    model = build_team(players)
+
+    save_to_deta(
+        model.results_to_json()
+    )
+
 
 def save_to_deta(result):
     dt = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    deta = Deta(os.environ['DETA_PROJECT'])
+    deta = Deta(deta_project)
     drive = deta.Drive("yahoo_results")
     drive.put(f'results_{dt}.json', result)
 
@@ -104,9 +120,7 @@ def build_team(players):
     solver.build_model(players)
     solver.solve_model()
     solver.print_solved(show_unplaced=False)
-    save_to_deta(
-        solver.results_to_json()
-    )
+    return solver
     
 
 
