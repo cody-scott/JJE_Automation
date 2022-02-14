@@ -30,16 +30,19 @@ runs:
     - name: Clone Deta Metadata
       shell: bash
       run: |
-        echo "dir data"
-        ls -a
-        pwd
         export DETA_ACCESS_TOKEN=${{ inputs.deta-access-token }}
         
-        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /home/runner/tmp/
+        echo "dir data"
+        ls -a
+        working_dir=$(pwd)
+
+        cd /
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /tmp/
         
 
-        echo "dir data"
-        cp -r /home/runner/tmp/.deta ${{ inputs.deta-project-dir }}
+        echo $working_dir/${{ inputs.deta-project-dir }}
+        
+        cp -r /tmp/.deta $working_dir/${{ inputs.deta-project-dir }}
         # rm -r tmp/
         
         cd ${{ inputs.deta-project-dir }}
