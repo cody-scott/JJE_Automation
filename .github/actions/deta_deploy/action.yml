@@ -30,18 +30,22 @@ runs:
     - name: Clone Deta Metadata
       shell: bash
       run: |
+        echo "dir data"
         ls -a
         pwd
-        
         export DETA_ACCESS_TOKEN=${{ inputs.deta-access-token }}
+        
         ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} tmp/
         
+
+        echo "dir data"
         cp -r tmp/.deta ${{ inputs.deta-project-dir }}
         rm -r tmp/
         
+        cd ${{ inputs.deta-project-dir }}
+        echo "dir data"
         ls -a
         pwd
-        cd ${{ inputs.deta-project-dir }}
 
 
     # Using the access token, deploy the project to Deta
