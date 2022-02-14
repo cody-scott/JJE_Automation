@@ -37,10 +37,10 @@ runs:
 
         deta_tmp="detatmp"
 
-        mkdir -p /tmp/$deta_tmp
-        deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /tmp/$deta_tmp
+        mkdir -p ~/$deta_tmp
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} ~/$deta_tmp
 
-        cp -r /tmp/$deta_tmp/.deta $working_dir/${{ inputs.deta-project-dir }}
+        cp -r ~/$deta_tmp/.deta $working_dir/${{ inputs.deta-project-dir }}
         
         echo $working_dir/${{ inputs.deta-project-dir }}
         
