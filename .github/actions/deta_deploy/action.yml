@@ -35,9 +35,10 @@ runs:
         echo "dir data"
         ls -a
         working_dir=$(pwd)
+        deta_tmp="detatmp"
 
         cd /
-        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /tmp/
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /$deta_tmp/
         
 
         echo $working_dir/${{ inputs.deta-project-dir }}
