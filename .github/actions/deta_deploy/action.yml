@@ -32,9 +32,11 @@ runs:
       run: |
         export DETA_ACCESS_TOKEN=${{ inputs.deta-access-token }}
         cd ${{ inputs.deta-project-dir }}
-        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} tmp/
-        cp -r tmp/.deta .
-        rm -r tmp/
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /tmp/
+        cp -r /tmp/.deta .
+        rm -r /tmp/
+        
+
     # Using the access token, deploy the project to Deta
     # https://docs.deta.sh/docs/cli/commands#deta-deploy
     - name: Deploy to Deta
