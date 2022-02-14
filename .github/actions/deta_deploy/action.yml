@@ -39,7 +39,7 @@ runs:
 
         mkdir -p ~/$deta_tmp
         cd /home/runner/
-        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} ~/$deta_tmp
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /$deta_tmp
 
         cp -r ~/$deta_tmp/.deta $working_dir/${{ inputs.deta-project-dir }}
         
