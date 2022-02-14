@@ -35,12 +35,12 @@ runs:
         pwd
         export DETA_ACCESS_TOKEN=${{ inputs.deta-access-token }}
         
-        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} tmp/
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /home/runner/tmp/
         
 
         echo "dir data"
-        cp -r tmp/.deta ${{ inputs.deta-project-dir }}
-        rm -r tmp/
+        cp -r /home/runner/tmp/.deta ${{ inputs.deta-project-dir }}
+        # rm -r tmp/
         
         cd ${{ inputs.deta-project-dir }}
         echo "dir data"
